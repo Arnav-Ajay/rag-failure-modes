@@ -33,7 +33,7 @@ Specifically:
 * We **do not fix them immediately**
 * We **log, classify, and reason about them**
 
-Optimization comes *later* (Weeks 10–12).
+Optimization comes *later*.
 
 ---
 

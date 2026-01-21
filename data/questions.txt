@@ -1,0 +1,25 @@
+Category A — Conceptual → Source-specific escalation
+(Baseline memory effect)
+1. What is parametric memory? 
+   Expected planner behavior: noop
+2. What is parametric memory according to Attention Is All You Need?
+   Expected planner behavior: retrieve
+
+Category B — Repeated conceptual question after retrieval
+(Working memory visibility, not persistence)
+1. Summarize the difference between parametric and non-parametric memory.
+   Expected planner behavior: likely retrieve
+2. Explain that difference again, briefly.
+   Expected planner behavior: WM contains -> planner thought, executor step, used_retrieval = True.
+   Planner decision may still be retrieve or noop — either is fine
+
+What we are evaluating:
+    WM correctly captures what just happened
+    WM resets next run
+
+Category C — Cross-run state forcing (your negative constraint)
+(This is where memory causes a suboptimal action)
+1. What does RAG mean in large language models?
+   Expected planner behavior: retrieve
+2. What is RAG?
+   Expected planner behavior: retrieve, even though it could answer parametrically
