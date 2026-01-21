@@ -21,16 +21,21 @@ class Runtime:
         wm.goal = question
 
         last_user_question = mem.read_semantic("last_user_question")
-        recent_episodes = mem.read_read_recent_episodes(n=10)
+        recent_episodes = mem.read_recent_episodes(n=10)
 
+        force = False
         if enforce_policies:
             recent_episodes = apply_forgetting(recent_episodes)
             force = allow_retrieval(wm=wm, episodic_tail=recent_episodes)
-        else: force = False
     
         planner = Planner()
+        memory_signal={
+            "retrieval_advice": force,
+            "policy_enforced": enforce_policies
+        }
+
         plan = planner.generate_plan(question, k=k, wm=wm,
-                                     memory_signal={"force_retrieval": force is True})
+                                     memory_signal=memory_signal)
         
         executor = Executor()
         execution_trace = executor.execute(plan, wm=wm)
@@ -79,7 +84,10 @@ class Runtime:
                 "thoughts": wm.thoughts,
                 "flags": wm.flags,
             },
-            "policy_mode": enforce_policies
+            "policy_mode": {
+                "retrieval_advice": force,
+                "policy_enforced": enforce_policies
+            }
         })
 
         return answer
