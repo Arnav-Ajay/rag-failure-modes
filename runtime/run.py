@@ -15,13 +15,13 @@ class Runtime:
     def _serialize_plan(self, plan):
         return asdict(plan)
 
-    def run(self, question: str, *, k: int = 4, enforce_policies: bool = False):
+    def run(self, question: str, *, k: int = 4, enforce_policies: bool = True):
         mem = MemoryRouter()
         wm = WorkingMemory()
         wm.goal = question
 
         last_user_question = mem.read_semantic("last_user_question")
-        recent_episodes = mem.read_recent_episodes(n=10)
+        recent_episodes = mem.read_recent_episodic(n=10)
 
         force = False
         if enforce_policies:

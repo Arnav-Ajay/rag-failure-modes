@@ -1,0 +1,40 @@
+{"ts_utc": 1769050099.13558, "event_type": "read", "store": "semantic", "key": "last_user_question", "payload": {"found": false}}
+{"ts_utc": 1769050099.135849, "event_type": "read", "store": "episodic", "key": "tail:10", "payload": {"returned": 0}}
+{"ts_utc": 1769050099.1386588, "event_type": "write", "store": "semantic", "key": "last_user_question", "payload": {"type": "str"}}
+{"ts_utc": 1769050099.138937, "event_type": "write", "store": "episodic", "key": "append", "payload": {"keys": ["last_user_question_before_run", "plan_actions", "question", "recent_episodes_count_before_run", "ts_utc", "used_retrieval"]}}
+{"ts_utc": 1769050120.8546143, "event_type": "read", "store": "semantic", "key": "last_user_question", "payload": {"found": true}}
+{"ts_utc": 1769050120.8564057, "event_type": "read", "store": "episodic", "key": "tail:10", "payload": {"returned": 1}}
+{"ts_utc": 1769050128.2536178, "event_type": "write", "store": "semantic", "key": "last_user_question", "payload": {"type": "str"}}
+{"ts_utc": 1769050128.2538543, "event_type": "write", "store": "episodic", "key": "append", "payload": {"keys": ["last_user_question_before_run", "plan_actions", "question", "recent_episodes_count_before_run", "ts_utc", "used_retrieval"]}}
+{"ts_utc": 1769050139.6083121, "event_type": "read", "store": "semantic", "key": "last_user_question", "payload": {"found": true}}
+{"ts_utc": 1769050139.608623, "event_type": "read", "store": "episodic", "key": "tail:10", "payload": {"returned": 2}}
+{"ts_utc": 1769050147.011414, "event_type": "write", "store": "semantic", "key": "last_user_question", "payload": {"type": "str"}}
+{"ts_utc": 1769050147.0133991, "event_type": "write", "store": "episodic", "key": "append", "payload": {"keys": ["last_user_question_before_run", "plan_actions", "question", "recent_episodes_count_before_run", "ts_utc", "used_retrieval"]}}
+{"ts_utc": 1769050163.5432663, "event_type": "read", "store": "semantic", "key": "last_user_question", "payload": {"found": true}}
+{"ts_utc": 1769050163.5435493, "event_type": "read", "store": "episodic", "key": "tail:10", "payload": {"returned": 3}}
+{"ts_utc": 1769050170.8827264, "event_type": "write", "store": "semantic", "key": "last_user_question", "payload": {"type": "str"}}
+{"ts_utc": 1769050170.8830566, "event_type": "write", "store": "semantic", "key": "last_answer_perview", "payload": {"type": "str"}}
+{"ts_utc": 1769050170.8832312, "event_type": "write", "store": "episodic", "key": "append", "payload": {"keys": ["last_user_question_before_run", "plan_actions", "question", "recent_episodes_count_before_run", "ts_utc", "used_retrieval"]}}
+{"ts_utc": 1769050176.0242064, "event_type": "read", "store": "semantic", "key": "last_user_question", "payload": {"found": true}}
+{"ts_utc": 1769050176.024485, "event_type": "read", "store": "episodic", "key": "tail:10", "payload": {"returned": 4}}
+{"ts_utc": 1769050176.025695, "event_type": "write", "store": "semantic", "key": "last_user_question", "payload": {"type": "str"}}
+{"ts_utc": 1769050176.0260758, "event_type": "write", "store": "semantic", "key": "last_answer_perview", "payload": {"type": "str"}}
+{"ts_utc": 1769050176.0262408, "event_type": "write", "store": "episodic", "key": "append", "payload": {"keys": ["last_user_question_before_run", "plan_actions", "question", "recent_episodes_count_before_run", "ts_utc", "used_retrieval"]}}
+{"ts_utc": 1769050194.6237922, "event_type": "read", "store": "semantic", "key": "last_user_question", "payload": {"found": true}}
+{"ts_utc": 1769050194.6240766, "event_type": "read", "store": "episodic", "key": "tail:10", "payload": {"returned": 5}}
+{"ts_utc": 1769050194.62524, "event_type": "write", "store": "semantic", "key": "last_user_question", "payload": {"type": "str"}}
+{"ts_utc": 1769050194.6256566, "event_type": "write", "store": "semantic", "key": "last_answer_perview", "payload": {"type": "str"}}
+{"ts_utc": 1769050194.6259215, "event_type": "write", "store": "episodic", "key": "append", "payload": {"keys": ["last_user_question_before_run", "plan_actions", "question", "recent_episodes_count_before_run", "ts_utc", "used_retrieval"]}}
+{"ts_utc": 1769050202.4549878, "event_type": "read", "store": "semantic", "key": "last_user_question", "payload": {"found": true}}
+{"ts_utc": 1769050202.4553134, "event_type": "read", "store": "episodic", "key": "tail:10", "payload": {"returned": 6}}
+{"ts_utc": 1769050202.4564126, "event_type": "write", "store": "semantic", "key": "last_user_question", "payload": {"type": "str"}}
+{"ts_utc": 1769050202.456723, "event_type": "write", "store": "semantic", "key": "last_answer_perview", "payload": {"type": "str"}}
+{"ts_utc": 1769050202.456888, "event_type": "write", "store": "episodic", "key": "append", "payload": {"keys": ["last_user_question_before_run", "plan_actions", "question", "recent_episodes_count_before_run", "ts_utc", "used_retrieval"]}}
+{"ts_utc": 1769050226.9830005, "event_type": "read", "store": "semantic", "key": "last_user_question", "payload": {"found": true}}
+{"ts_utc": 1769050226.9832983, "event_type": "read", "store": "episodic", "key": "tail:10", "payload": {"returned": 7}}
+{"ts_utc": 1769050234.4357474, "event_type": "write", "store": "semantic", "key": "last_user_question", "payload": {"type": "str"}}
+{"ts_utc": 1769050234.4359744, "event_type": "write", "store": "episodic", "key": "append", "payload": {"keys": ["last_user_question_before_run", "plan_actions", "question", "recent_episodes_count_before_run", "ts_utc", "used_retrieval"]}}
+{"ts_utc": 1769050237.5682073, "event_type": "read", "store": "semantic", "key": "last_user_question", "payload": {"found": true}}
+{"ts_utc": 1769050237.5686307, "event_type": "read", "store": "episodic", "key": "tail:10", "payload": {"returned": 8}}
+{"ts_utc": 1769050244.9299502, "event_type": "write", "store": "semantic", "key": "last_user_question", "payload": {"type": "str"}}
+{"ts_utc": 1769050244.9302201, "event_type": "write", "store": "episodic", "key": "append", "payload": {"keys": ["last_user_question_before_run", "plan_actions", "question", "recent_episodes_count_before_run", "ts_utc", "used_retrieval"]}}

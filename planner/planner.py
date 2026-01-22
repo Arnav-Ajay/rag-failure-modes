@@ -1,6 +1,6 @@
 # planner/planner.py
 from decision.decide import decide_retrieval
-from planner import Plan, PlanStep
+from .plan_schema import Plan, PlanStep
 
 class Planner:
     def generate_plan(self, question: str, *, k: int = 4, wm=None, memory_signal=None) -> Plan:

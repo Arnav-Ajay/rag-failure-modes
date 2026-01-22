@@ -19,7 +19,7 @@ PARAMETRIC_HINTS = [
     r"\bintuition\b", r"\bconcept\b", r"\btrade-?off\b",
 ]
 
-def decide_retrieval(self, question: str) -> RetrievalDecision:
+def decide_retrieval(question: str) -> RetrievalDecision:
     """
     Docstring for decide_retrieval
     
