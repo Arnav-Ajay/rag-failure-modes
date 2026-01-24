@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-01-24T18:56:06.803386",
+  "question": "What optimizer and learning rate schedule were used in Attention Is All You Need?",
+  "k": 4,
+  "metadata": {
+    "question_id": 5,
+    "phase": "planner",
+    "expected_retrieval": "RETRIEVE"
+  },
+  "inputs": {
+    "memory_signal": {
+      "retrieval_advice": false,
+      "policy_enforced": false
+    }
+  },
+  "decision": {
+    "requires_external_evidence": false,
+    "confidence": "low",
+    "decision_rationale": "no strong evidence dependency detected"
+  },
+  "plan": {
+    "objective": "What optimizer and learning rate schedule were used in Attention Is All You Need?",
+    "steps": [
+      {
+        "step_id": 1,
+        "action": "noop",
+        "args": {},
+        "rationale": "no strong evidence dependency detected"
+      }
+    ]
+  },
+  "summary": {
+    "planner_action": "noop",
+    "memory_advice_used": false,
+    "decision_requires_evidence": false
+  }
+}

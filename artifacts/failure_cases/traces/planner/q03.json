@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-01-24T18:56:06.802539",
+  "question": "What BLEU score did Vaswani et al. report for EN\u2013DE translation?",
+  "k": 4,
+  "metadata": {
+    "question_id": 3,
+    "phase": "planner",
+    "expected_retrieval": "RETRIEVE"
+  },
+  "inputs": {
+    "memory_signal": {
+      "retrieval_advice": false,
+      "policy_enforced": false
+    }
+  },
+  "decision": {
+    "requires_external_evidence": true,
+    "confidence": "high",
+    "decision_rationale": "evidence-dependent request (source-specific)"
+  },
+  "plan": {
+    "objective": "What BLEU score did Vaswani et al. report for EN\u2013DE translation?",
+    "steps": [
+      {
+        "step_id": 1,
+        "action": "retrieve",
+        "args": {
+          "question": "What BLEU score did Vaswani et al. report for EN\u2013DE translation?",
+          "k": 4
+        },
+        "rationale": "evidence-dependent request (source-specific)"
+      }
+    ]
+  },
+  "summary": {
+    "planner_action": "retrieve",
+    "memory_advice_used": false,
+    "decision_requires_evidence": true
+  }
+}

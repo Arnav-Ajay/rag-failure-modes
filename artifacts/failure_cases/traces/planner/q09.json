@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-01-24T18:56:06.804261",
+  "question": "According to the paper, what are the main components of the encoder layer?",
+  "k": 4,
+  "metadata": {
+    "question_id": 9,
+    "phase": "planner",
+    "expected_retrieval": "RETRIEVE"
+  },
+  "inputs": {
+    "memory_signal": {
+      "retrieval_advice": false,
+      "policy_enforced": false
+    }
+  },
+  "decision": {
+    "requires_external_evidence": true,
+    "confidence": "high",
+    "decision_rationale": "evidence-dependent request (source-specific)"
+  },
+  "plan": {
+    "objective": "According to the paper, what are the main components of the encoder layer?",
+    "steps": [
+      {
+        "step_id": 1,
+        "action": "retrieve",
+        "args": {
+          "question": "According to the paper, what are the main components of the encoder layer?",
+          "k": 4
+        },
+        "rationale": "evidence-dependent request (source-specific)"
+      }
+    ]
+  },
+  "summary": {
+    "planner_action": "retrieve",
+    "memory_advice_used": false,
+    "decision_requires_evidence": true
+  }
+}

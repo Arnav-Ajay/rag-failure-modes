@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-01-24T18:56:06.803657",
+  "question": "Summarize Section 3.2 of Attention Is All You Need.",
+  "k": 4,
+  "metadata": {
+    "question_id": 8,
+    "phase": "planner",
+    "expected_retrieval": "RETRIEVE"
+  },
+  "inputs": {
+    "memory_signal": {
+      "retrieval_advice": false,
+      "policy_enforced": false
+    }
+  },
+  "decision": {
+    "requires_external_evidence": true,
+    "confidence": "high",
+    "decision_rationale": "evidence-dependent request (source-specific)"
+  },
+  "plan": {
+    "objective": "Summarize Section 3.2 of Attention Is All You Need.",
+    "steps": [
+      {
+        "step_id": 1,
+        "action": "retrieve",
+        "args": {
+          "question": "Summarize Section 3.2 of Attention Is All You Need.",
+          "k": 4
+        },
+        "rationale": "evidence-dependent request (source-specific)"
+      }
+    ]
+  },
+  "summary": {
+    "planner_action": "retrieve",
+    "memory_advice_used": false,
+    "decision_requires_evidence": true
+  }
+}

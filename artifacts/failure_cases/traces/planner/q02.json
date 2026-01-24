@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-01-24T18:56:06.802001",
+  "question": "Explain the intuition behind scaling dot-product attention by \u221adk.",
+  "k": 4,
+  "metadata": {
+    "question_id": 2,
+    "phase": "planner",
+    "expected_retrieval": "NOOP"
+  },
+  "inputs": {
+    "memory_signal": {
+      "retrieval_advice": false,
+      "policy_enforced": false
+    }
+  },
+  "decision": {
+    "requires_external_evidence": false,
+    "confidence": "medium",
+    "decision_rationale": "conceptual/mechanistic answer likely parametric"
+  },
+  "plan": {
+    "objective": "Explain the intuition behind scaling dot-product attention by \u221adk.",
+    "steps": [
+      {
+        "step_id": 1,
+        "action": "noop",
+        "args": {},
+        "rationale": "conceptual/mechanistic answer likely parametric"
+      }
+    ]
+  },
+  "summary": {
+    "planner_action": "noop",
+    "memory_advice_used": false,
+    "decision_requires_evidence": false
+  }
+}

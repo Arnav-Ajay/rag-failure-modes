@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-01-24T18:56:06.805130",
+  "question": "What evidence supports the claim that attention improves translation quality?",
+  "k": 4,
+  "metadata": {
+    "question_id": 11,
+    "phase": "planner",
+    "expected_retrieval": "RETRIEVE (debatable)"
+  },
+  "inputs": {
+    "memory_signal": {
+      "retrieval_advice": false,
+      "policy_enforced": false
+    }
+  },
+  "decision": {
+    "requires_external_evidence": false,
+    "confidence": "low",
+    "decision_rationale": "no strong evidence dependency detected"
+  },
+  "plan": {
+    "objective": "What evidence supports the claim that attention improves translation quality?",
+    "steps": [
+      {
+        "step_id": 1,
+        "action": "noop",
+        "args": {},
+        "rationale": "no strong evidence dependency detected"
+      }
+    ]
+  },
+  "summary": {
+    "planner_action": "noop",
+    "memory_advice_used": false,
+    "decision_requires_evidence": false
+  }
+}

@@ -7,7 +7,7 @@ from tools.ingest import load_pdf, chunk_texts
 from tools.retriever_core import create_vector_store, create_bm25_index
 
 PDF_DIR = "data/input_pdfs/"
-QUESTIONS_PATH = "artifacts/failure_cases/questions/retrieval_miss_v0.xlsx"
+QUESTIONS_PATH = "artifacts/failure_cases/questions/retrieval_questions.xlsx"
 TRACE_DIR = Path("artifacts/failure_cases/traces/retrieval")
 TRACE_DIR.mkdir(parents=True, exist_ok=True)
 
