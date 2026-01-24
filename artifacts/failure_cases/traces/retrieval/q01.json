@@ -1,0 +1,212 @@
+{
+  "timestamp": "2026-01-22T04:40:47.353663",
+  "query": "What architectural components are removed in the Transformer model?",
+  "top_k": 20,
+  "metadata": {
+    "question_id": 1,
+    "gold_chunk_id": 1,
+    "phase": "retrieval"
+  },
+  "results": [
+    {
+      "rank": 1,
+      "chunk_id": 386,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 1,
+      "sparse_score": 12.159387387759628,
+      "priority": 2
+    },
+    {
+      "rank": 2,
+      "chunk_id": 539,
+      "doc_id": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 2,
+      "sparse_score": 10.696567699417223,
+      "priority": 2
+    },
+    {
+      "rank": 3,
+      "chunk_id": 111,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 3,
+      "sparse_score": 9.673176588394513,
+      "priority": 2
+    },
+    {
+      "rank": 4,
+      "chunk_id": 290,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 4,
+      "sparse_score": 8.177248374857461,
+      "priority": 2
+    },
+    {
+      "rank": 5,
+      "chunk_id": 389,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 5,
+      "sparse_score": 7.978706318407378,
+      "priority": 2
+    },
+    {
+      "rank": 6,
+      "chunk_id": 212,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 6,
+      "sparse_score": 7.901160810617635,
+      "priority": 2
+    },
+    {
+      "rank": 7,
+      "chunk_id": 302,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 7,
+      "sparse_score": 7.900668470774222,
+      "priority": 2
+    },
+    {
+      "rank": 8,
+      "chunk_id": 170,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 8,
+      "sparse_score": 7.675073949137554,
+      "priority": 2
+    },
+    {
+      "rank": 9,
+      "chunk_id": 229,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 9,
+      "sparse_score": 7.277285533672721,
+      "priority": 2
+    },
+    {
+      "rank": 10,
+      "chunk_id": 105,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 10,
+      "sparse_score": 7.248851351298157,
+      "priority": 2
+    },
+    {
+      "rank": 11,
+      "chunk_id": 502,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 11,
+      "sparse_score": 7.226492392120834,
+      "priority": 2
+    },
+    {
+      "rank": 12,
+      "chunk_id": 385,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 12,
+      "sparse_score": 7.220758168977546,
+      "priority": 2
+    },
+    {
+      "rank": 13,
+      "chunk_id": 155,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 13,
+      "sparse_score": 7.094970571930648,
+      "priority": 2
+    },
+    {
+      "rank": 14,
+      "chunk_id": 192,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 14,
+      "sparse_score": 7.0049333725629745,
+      "priority": 2
+    },
+    {
+      "rank": 15,
+      "chunk_id": 253,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 15,
+      "sparse_score": 6.946302268043167,
+      "priority": 2
+    },
+    {
+      "rank": 16,
+      "chunk_id": 214,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 16,
+      "sparse_score": 6.933749356050691,
+      "priority": 2
+    },
+    {
+      "rank": 17,
+      "chunk_id": 288,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 17,
+      "sparse_score": 6.77882655194736,
+      "priority": 2
+    },
+    {
+      "rank": 18,
+      "chunk_id": 188,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 18,
+      "sparse_score": 6.3518538007587395,
+      "priority": 2
+    },
+    {
+      "rank": 19,
+      "chunk_id": 109,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 19,
+      "sparse_score": 6.244717862791617,
+      "priority": 2
+    },
+    {
+      "rank": 20,
+      "chunk_id": 198,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 20,
+      "sparse_score": 6.097747448275051,
+      "priority": 2
+    }
+  ]
+}

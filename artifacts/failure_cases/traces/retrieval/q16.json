@@ -1,0 +1,212 @@
+{
+  "timestamp": "2026-01-22T04:40:47.380271",
+  "query": "What mathematical functions are used to construct positional encodings?",
+  "top_k": 20,
+  "metadata": {
+    "question_id": 16,
+    "gold_chunk_id": 30,
+    "phase": "retrieval"
+  },
+  "results": [
+    {
+      "rank": 1,
+      "chunk_id": 212,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 1,
+      "sparse_score": 17.187790098253807,
+      "priority": 2
+    },
+    {
+      "rank": 2,
+      "chunk_id": 199,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 2,
+      "sparse_score": 14.723022701468688,
+      "priority": 2
+    },
+    {
+      "rank": 3,
+      "chunk_id": 244,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 3,
+      "sparse_score": 11.628991401378114,
+      "priority": 2
+    },
+    {
+      "rank": 4,
+      "chunk_id": 207,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 4,
+      "sparse_score": 9.767699307496386,
+      "priority": 2
+    },
+    {
+      "rank": 5,
+      "chunk_id": 211,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 5,
+      "sparse_score": 9.297113639346678,
+      "priority": 2
+    },
+    {
+      "rank": 6,
+      "chunk_id": 186,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 6,
+      "sparse_score": 9.1375712365057,
+      "priority": 2
+    },
+    {
+      "rank": 7,
+      "chunk_id": 192,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 7,
+      "sparse_score": 8.505441892690339,
+      "priority": 2
+    },
+    {
+      "rank": 8,
+      "chunk_id": 253,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 8,
+      "sparse_score": 8.436719477791776,
+      "priority": 2
+    },
+    {
+      "rank": 9,
+      "chunk_id": 198,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 9,
+      "sparse_score": 8.315056247990718,
+      "priority": 2
+    },
+    {
+      "rank": 10,
+      "chunk_id": 204,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 10,
+      "sparse_score": 7.896643100774691,
+      "priority": 2
+    },
+    {
+      "rank": 11,
+      "chunk_id": 301,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 11,
+      "sparse_score": 7.746341960706817,
+      "priority": 2
+    },
+    {
+      "rank": 12,
+      "chunk_id": 302,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 12,
+      "sparse_score": 7.700393613541659,
+      "priority": 2
+    },
+    {
+      "rank": 13,
+      "chunk_id": 220,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 13,
+      "sparse_score": 7.48457579696154,
+      "priority": 2
+    },
+    {
+      "rank": 14,
+      "chunk_id": 200,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 14,
+      "sparse_score": 7.198904536453414,
+      "priority": 2
+    },
+    {
+      "rank": 15,
+      "chunk_id": 88,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 15,
+      "sparse_score": 7.09270365662517,
+      "priority": 2
+    },
+    {
+      "rank": 16,
+      "chunk_id": 394,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 16,
+      "sparse_score": 7.004101340295709,
+      "priority": 2
+    },
+    {
+      "rank": 17,
+      "chunk_id": 157,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 17,
+      "sparse_score": 6.801511323765726,
+      "priority": 2
+    },
+    {
+      "rank": 18,
+      "chunk_id": 280,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 18,
+      "sparse_score": 6.544241085454417,
+      "priority": 2
+    },
+    {
+      "rank": 19,
+      "chunk_id": 393,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 19,
+      "sparse_score": 6.466468737723616,
+      "priority": 2
+    },
+    {
+      "rank": 20,
+      "chunk_id": 127,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 20,
+      "sparse_score": 5.977178904312259,
+      "priority": 2
+    }
+  ]
+}

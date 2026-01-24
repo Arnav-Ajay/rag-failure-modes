@@ -1,0 +1,212 @@
+{
+  "timestamp": "2026-01-22T04:40:47.374854",
+  "query": "Why is masking applied in the decoder self-attention layer?",
+  "top_k": 20,
+  "metadata": {
+    "question_id": 11,
+    "gold_chunk_id": 16,
+    "phase": "retrieval"
+  },
+  "results": [
+    {
+      "rank": 1,
+      "chunk_id": 16,
+      "doc_id": "Attention Is All You Need.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 1,
+      "sparse_score": 19.69035338836192,
+      "priority": 2
+    },
+    {
+      "rank": 2,
+      "chunk_id": 174,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 2,
+      "sparse_score": 16.107614281007276,
+      "priority": 2
+    },
+    {
+      "rank": 3,
+      "chunk_id": 15,
+      "doc_id": "Attention Is All You Need.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 3,
+      "sparse_score": 15.188579767208271,
+      "priority": 2
+    },
+    {
+      "rank": 4,
+      "chunk_id": 173,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 4,
+      "sparse_score": 14.29974157525275,
+      "priority": 2
+    },
+    {
+      "rank": 5,
+      "chunk_id": 214,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 5,
+      "sparse_score": 11.689833952922145,
+      "priority": 2
+    },
+    {
+      "rank": 6,
+      "chunk_id": 24,
+      "doc_id": "Attention Is All You Need.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 6,
+      "sparse_score": 11.408917098917847,
+      "priority": 2
+    },
+    {
+      "rank": 7,
+      "chunk_id": 386,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 7,
+      "sparse_score": 10.725423407994082,
+      "priority": 2
+    },
+    {
+      "rank": 8,
+      "chunk_id": 34,
+      "doc_id": "Attention Is All You Need.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 8,
+      "sparse_score": 10.570758964152407,
+      "priority": 2
+    },
+    {
+      "rank": 9,
+      "chunk_id": 200,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 9,
+      "sparse_score": 10.566700985487092,
+      "priority": 2
+    },
+    {
+      "rank": 10,
+      "chunk_id": 114,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 10,
+      "sparse_score": 9.787564338180346,
+      "priority": 2
+    },
+    {
+      "rank": 11,
+      "chunk_id": 245,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 11,
+      "sparse_score": 9.538073083697844,
+      "priority": 2
+    },
+    {
+      "rank": 12,
+      "chunk_id": 10,
+      "doc_id": "Attention Is All You Need.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 12,
+      "sparse_score": 9.466363987450704,
+      "priority": 2
+    },
+    {
+      "rank": 13,
+      "chunk_id": 105,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 13,
+      "sparse_score": 9.189725625036022,
+      "priority": 2
+    },
+    {
+      "rank": 14,
+      "chunk_id": 14,
+      "doc_id": "Attention Is All You Need.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 14,
+      "sparse_score": 8.502287940743066,
+      "priority": 2
+    },
+    {
+      "rank": 15,
+      "chunk_id": 213,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 15,
+      "sparse_score": 8.331139891842545,
+      "priority": 2
+    },
+    {
+      "rank": 16,
+      "chunk_id": 29,
+      "doc_id": "Attention Is All You Need.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 16,
+      "sparse_score": 8.30112298327695,
+      "priority": 2
+    },
+    {
+      "rank": 17,
+      "chunk_id": 86,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 17,
+      "sparse_score": 8.185416346585525,
+      "priority": 2
+    },
+    {
+      "rank": 18,
+      "chunk_id": 32,
+      "doc_id": "Attention Is All You Need.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 18,
+      "sparse_score": 8.162536906524515,
+      "priority": 2
+    },
+    {
+      "rank": 19,
+      "chunk_id": 205,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 19,
+      "sparse_score": 8.069747556200639,
+      "priority": 2
+    },
+    {
+      "rank": 20,
+      "chunk_id": 90,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 20,
+      "sparse_score": 8.067295396605449,
+      "priority": 2
+    }
+  ]
+}

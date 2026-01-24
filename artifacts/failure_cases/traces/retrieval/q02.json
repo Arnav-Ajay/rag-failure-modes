@@ -1,0 +1,212 @@
+{
+  "timestamp": "2026-01-22T04:40:47.356655",
+  "query": "What aspect of recurrent neural networks prevents parallelization during training?",
+  "top_k": 20,
+  "metadata": {
+    "question_id": 2,
+    "gold_chunk_id": 6,
+    "phase": "retrieval"
+  },
+  "results": [
+    {
+      "rank": 1,
+      "chunk_id": 56,
+      "doc_id": "Attention Is All You Need.pdf",
+      "dense_rank": 4,
+      "dense_score": 0.8176078318797133,
+      "sparse_rank": 3,
+      "sparse_score": 11.832704511679164,
+      "priority": 1
+    },
+    {
+      "rank": 2,
+      "chunk_id": 74,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 1,
+      "sparse_score": 13.96008030912957,
+      "priority": 2
+    },
+    {
+      "rank": 3,
+      "chunk_id": 408,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 2,
+      "sparse_score": 12.932002576009156,
+      "priority": 2
+    },
+    {
+      "rank": 4,
+      "chunk_id": 410,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 4,
+      "sparse_score": 10.280097766013082,
+      "priority": 2
+    },
+    {
+      "rank": 5,
+      "chunk_id": 152,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 5,
+      "sparse_score": 10.048581851151274,
+      "priority": 2
+    },
+    {
+      "rank": 6,
+      "chunk_id": 82,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 6,
+      "sparse_score": 8.44953586241635,
+      "priority": 2
+    },
+    {
+      "rank": 7,
+      "chunk_id": 76,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 7,
+      "sparse_score": 8.405189975409296,
+      "priority": 2
+    },
+    {
+      "rank": 8,
+      "chunk_id": 83,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 8,
+      "sparse_score": 8.059920636837145,
+      "priority": 2
+    },
+    {
+      "rank": 9,
+      "chunk_id": 230,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 9,
+      "sparse_score": 7.65934708980444,
+      "priority": 2
+    },
+    {
+      "rank": 10,
+      "chunk_id": 247,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 10,
+      "sparse_score": 7.657772282001872,
+      "priority": 2
+    },
+    {
+      "rank": 11,
+      "chunk_id": 302,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 11,
+      "sparse_score": 7.605855404250862,
+      "priority": 2
+    },
+    {
+      "rank": 12,
+      "chunk_id": 539,
+      "doc_id": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 12,
+      "sparse_score": 7.590243383641322,
+      "priority": 2
+    },
+    {
+      "rank": 13,
+      "chunk_id": 607,
+      "doc_id": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 13,
+      "sparse_score": 7.221242495133787,
+      "priority": 2
+    },
+    {
+      "rank": 14,
+      "chunk_id": 70,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 14,
+      "sparse_score": 7.137693346305016,
+      "priority": 2
+    },
+    {
+      "rank": 15,
+      "chunk_id": 231,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 15,
+      "sparse_score": 6.847234756401985,
+      "priority": 2
+    },
+    {
+      "rank": 16,
+      "chunk_id": 239,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 16,
+      "sparse_score": 6.396214465012216,
+      "priority": 2
+    },
+    {
+      "rank": 17,
+      "chunk_id": 197,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 17,
+      "sparse_score": 6.334302742593444,
+      "priority": 2
+    },
+    {
+      "rank": 18,
+      "chunk_id": 192,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 18,
+      "sparse_score": 6.25636925561631,
+      "priority": 2
+    },
+    {
+      "rank": 19,
+      "chunk_id": 36,
+      "doc_id": "Attention Is All You Need.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 19,
+      "sparse_score": 5.9034254862050375,
+      "priority": 2
+    },
+    {
+      "rank": 20,
+      "chunk_id": 283,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "dense_rank": null,
+      "dense_score": null,
+      "sparse_rank": 20,
+      "sparse_score": 5.78039655535507,
+      "priority": 2
+    }
+  ]
+}
