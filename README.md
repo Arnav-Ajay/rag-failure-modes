@@ -2,24 +2,27 @@
 
 ## Why This Repository Exists
 
-This repository exists to deliberately surface, isolate, and classify **RAG failure modes** — not to fix them, optimize them, or hide them behind heuristics.
+This repository exists to deliberately surface, isolate, and classify **failure modes in retrieval-augmented and agentic systems** — not to fix them, optimize them, or obscure them behind heuristics.
 
-> **A system you can’t explain when it fails is not a system — it’s a liability.**
+> **A system you cannot explain when it fails is not a system — it is a liability.**
+
+Most RAG work focuses on improving answers.
+This repository focuses on understanding *why* answers fail.
 
 ---
 
 ## What Problem This Repository Addresses
 
-Most RAG systems fail in ways that are:
+Modern RAG systems fail in ways that are:
 
 * Silent
 * Confounded across layers
-* Incorrectly attributed (retrieval vs generation vs memory)
-* “Solved” with hacks instead of understanding
+* Incorrectly attributed (retrieval vs planning vs execution vs memory)
+* “Solved” with patches instead of understanding
 
 This repository asks a different question:
 
-> **When a RAG system gives a bad answer, *which layer failed*, and *how do we know*?**
+> **When a system produces a bad outcome, which layer failed — and how can we prove it?**
 
 ---
 
@@ -27,122 +30,197 @@ This repository asks a different question:
 
 This repository treats **failure as the primary signal**, not success.
 
-Specifically:
+Concretely:
 
-* We **intentionally induce failures**
-* We **do not fix them immediately**
-* We **log, classify, and reason about them**
+* Failures are **intentionally induced**
+* Failures are **not immediately fixed**
+* Failures are **logged, classified, and traced**
+* Optimization is explicitly deferred
 
-Optimization comes *later*.
+Understanding failure *precedes* improving performance.
 
 ---
 
 ## What This Repository Explicitly Does NOT Do
 
-This is **not** a mitigation or tuning repo.
+This is **not** a tuning or mitigation repository.
 
 It deliberately avoids:
 
-* Prompt engineering fixes
+* Prompt engineering
+* Retrieval optimization
 * Reranking improvements
-* Retrieval tuning
 * Memory heuristics
-* “Guardrail” band-aids
-* Evaluation score chasing
+* Guardrails or refusal logic
+* Aggregate accuracy metrics
 
-If the system breaks, that is **desirable** here.
-
----
-
-## System Lineage (How This Builds on Prior Weeks)
-
-This repository assumes the full stack from prior repositories exists and is frozen:
-
-* [`agent-tool-retriever`](https://github.com/Arnav-Ajay/agent-tool-retriever): Tool-using agent
-* [`agent-planner-executor`](https://github.com/Arnav-Ajay/agent-planner-executor): Planner / executor separation
-* [`agent-memory-systems`](https://github.com/Arnav-Ajay/agent-memory-systems): Short-term + long-term memory
-
-**No new intelligence is added.**
-
-Only **new visibility into failure**.
+If the system breaks here, that is **desirable**.
 
 ---
 
-## Failure Classes Under Investigation (Initial Hypothesis)
+## System Lineage (Assumed and Frozen)
 
-This repository will investigate — but not yet conclude — failures such as:
+This repository assumes a **pre-existing, frozen system stack** built in earlier work. No new intelligence is added here.
 
-* **Retrieval-present but ignored**
-* **Retrieval-absent but answerable via parametric knowledge**
-* **Planner chooses retrieval when it shouldn’t**
-* **Planner skips retrieval when it must not**
-* **Executor answers despite insufficient evidence**
-* **Memory contamination across sessions**
-* **Contradictory retrieved contexts**
-* **High-confidence wrong answers**
-* **Correct answers for the wrong reasons**
+### Foundations (Retrieval & Representation)
 
-These are *working hypotheses*, not finalized taxonomy.
+* **Repository**:
+  [`rag-systems-foundations`](https://github.com/Arnav-Ajay/rag-systems-foundations)
+  Covers:
+
+  * Chunking strategies
+  * Dense / sparse / hybrid retrieval
+  * Reranking
+  * Retrieval evaluation discipline
+
+### Agent Architecture (Decision, Execution, Memory)
+
+* **Repository**:
+  [`agent-systems-core`](https://github.com/Arnav-Ajay/agent-systems-core)
+  Covers:
+
+  * Tool-using agents
+  * Planner / executor separation
+  * Memory systems (episodic + semantic)
+  * Policy-driven overrides
+
+**All components from these repositories are treated as immutable inputs.**
+
+This repository adds **visibility, not capability**.
 
 ---
 
-## System Contract (Planned)
+## Scope of Analysis in This Repository
 
-**Inputs**
+This repository isolates failures **layer by layer**, rather than treating the system as a monolith.
 
-* Deterministic query sets
-* Known-answer and known-unanswerable questions
-* Contradictory and adversarial prompts
-* Memory-carryover scenarios
+### Layers Examined (So Far)
 
-**Outputs**
+#### 1. Retrieval Layer
 
-* Layer-specific traces
-* Failure annotations
-* Structured logs (not metrics yet)
-* Human-readable failure narratives
+Failures where:
 
-**Non-goal**
+* Relevant evidence is missing
+* Evidence exists but is ranked out
+* Hybrid retrieval biases suppress correct chunks
+* Cross-document pollution occurs
+
+Retrieval is analyzed *without* changing planner or executor behavior.
+
+---
+
+#### 2. Planner Layer
+
+Failures where:
+
+* Retrieval is skipped when mandatory
+* Retrieval is invoked when unnecessary
+* Ambiguous questions are misclassified
+* Logged rationale does not justify the decision
+
+Planner analysis focuses on **decision correctness**, not answer quality.
+
+---
+
+#### 3. Executor Layer
+
+Failures where:
+
+* Planned actions are not faithfully executed
+* Tools are mis-invoked
+* Arguments are ignored or malformed
+* Retrieved context is dropped or mishandled
+
+**Finding:**
+In the current architecture, executor failures are structurally rare due to:
+
+* Single-step plans
+* Deterministic tool dispatch
+* Absence of downstream generation or transformation
+
+This absence is itself an architectural property, not an oversight.
+
+---
+
+## Failure Taxonomy Philosophy
+
+Failure modes are:
+
+* **Layer-specific**
+* **Mutually exclusive**
+* **Causally attributable**
+
+A failure is assigned to **exactly one layer**, even if downstream effects exist.
+
+Examples of failure classes under investigation include:
+
+* Retrieval skipped despite source-bound question
+* Retrieval invoked for purely parametric queries
+* Planner confidence collapse under ambiguity
+* Executor obedience masking planner mistakes
+* Correct answers produced for incorrect reasons
+
+These are **working classifications**, not final conclusions.
+
+---
+
+## Artifacts Produced
+
+This repository produces **diagnostic artifacts**, not scores:
+
+* Per-layer execution traces (JSON): `artifacts\failure_cases\traces`
+* Layer-specific question sets: `artifacts\failure_cases\questions`
+* Layer-specific result sheets: `artifacts\failure_cases\results`
+
+There is **no single evaluation metric**.
+
+---
+
+## System Contract
+
+### Inputs
+
+* Deterministic question sets
+* Known-answer and known-unanswerable prompts
+* Ambiguous boundary cases
+* Contradictory and adversarial inputs
+
+### Outputs
+
+* Planner decision traces
+* Executor execution traces
+* Failure mode attribution
+* Explicit “ambiguous / undecidable” buckets
+
+### Non-Goal
 
 * Improving answer accuracy
 
 ---
 
-## Planned Evaluation Artifacts (No Results Yet)
+## Relationship to Observability Work
 
-This repository is expected to produce:
+This repository answers:
 
-* A **failure-mode taxonomy**
-* Per-layer failure attribution
-* Example traces demonstrating:
+> **What kinds of failures exist in principle?**
 
-  * Same answer, different failure causes
-  * Different answers, same failure cause
-* Explicit “unknown / ambiguous” buckets
+A separate repository (`llm-observability-logs`) will address:
 
-Nothing here will be summarized as a single score.
+> **How do we observe and monitor these failures reliably in production systems?**
+
+Failure definition precedes observability instrumentation.
 
 ---
 
 ## Status
 
-🚧 **Planning phase**
+🚧 **Active analysis**
 
-* No results yet
-* No conclusions yet
-* Architecture intentionally conservative
-* Instrumentation decisions deferred to `llm-observability-logs`
+* Retrieval, planner, and executor layers analyzed
+* Failure modes defined and exercised
+* Memory and policy influence intentionally deferred
+* No system changes introduced
 
----
-
-## Relationship to other repositories (Observability)
-
-This repository answers:
-
-> **What kinds of failures exist?**
-
-`llm-observability-logs` answers:
-
-> **How do we observe them reliably in production?**
+This repository will only move forward once each layer’s failure surface is understood.
 
 ---

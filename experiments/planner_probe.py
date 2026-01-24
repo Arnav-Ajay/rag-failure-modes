@@ -4,7 +4,7 @@ import pandas as pd
 
 from tools.planner_trace import traced_planner_plan
 
-QUESTIONS_PATH = "artifacts/failure_cases/questions/planner_questions.xlsx"
+QUESTIONS_PATH = "artifacts/failure_cases/questions/planner_executor_questions.xlsx"
 TRACE_DIR = Path("artifacts/failure_cases/traces/planner")
 TRACE_DIR.mkdir(parents=True, exist_ok=True)
 
