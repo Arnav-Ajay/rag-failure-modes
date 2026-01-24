@@ -142,6 +142,32 @@ This absence is itself an architectural property, not an oversight.
 
 ---
 
+#### 4. Memory Layer
+
+Failures where:
+
+* Semantic or episodic memory influences the current decision when it should not.
+* Information from a previous question leaks into the current run.
+* Semantic memory is treated as authoritative without validation.
+* Memory-based policy signal exists, but is ignored.
+* Memory is written when it shouldn’t be.
+* Memory influences behavior, but no trace shows it.
+
+**Finding:**
+In the current architecture, memory failures are structurally rare as the memory subsystem is causally isolated and well-behaved under baseline conditions.
+
+That means:
+
+* No stale memory injection
+* No contamination
+* No semantic authority abuse
+* No silent writes
+* No hidden influence
+
+Which is exactly where we want to be before introducing policy pressure.
+
+---
+
 ## Failure Taxonomy Philosophy
 
 Failure modes are:

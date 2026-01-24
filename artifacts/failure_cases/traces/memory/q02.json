@@ -1,0 +1,225 @@
+{
+  "timestamp": "2026-01-24T20:19:52.928345",
+  "phase": "memory",
+  "query": "What BLEU score did Vaswani et al. report for EN–DE translation?",
+  "top_k": 4,
+  "metadata": {
+    "question_id": 2,
+    "memory_case": "M-B1",
+    "expected_memory_use": "YES",
+    "notes": "evidence-bound"
+  },
+  "memory_reads": {
+    "episodic_tail_n": 10,
+    "episodic_tail": [
+      {
+        "ts_utc": 1769050099.1388042,
+        "question": "What is parametric memory?",
+        "plan_actions": [
+          "noop"
+        ],
+        "used_retrieval": false,
+        "last_user_question_before_run": null,
+        "recent_episodes_count_before_run": 0
+      },
+      {
+        "ts_utc": 1769050128.253751,
+        "question": "What is parametric memory according to Attention Is All You Need?",
+        "plan_actions": [
+          "retrieve"
+        ],
+        "used_retrieval": true,
+        "last_user_question_before_run": "What is parametric memory?",
+        "recent_episodes_count_before_run": 1
+      },
+      {
+        "ts_utc": 1769050147.0115576,
+        "question": "What is parametric memory?",
+        "plan_actions": [
+          "retrieve"
+        ],
+        "used_retrieval": true,
+        "last_user_question_before_run": "What is parametric memory according to Attention Is All You Need?",
+        "recent_episodes_count_before_run": 2
+      },
+      {
+        "ts_utc": 1769050170.8831463,
+        "question": "Summarize the difference between parametric and non-parametric memory.",
+        "plan_actions": [
+          "retrieve"
+        ],
+        "used_retrieval": true,
+        "last_user_question_before_run": "What is parametric memory?",
+        "recent_episodes_count_before_run": 3
+      },
+      {
+        "ts_utc": 1769050176.0261626,
+        "question": "Explain that difference again, briefly.",
+        "plan_actions": [
+          "noop"
+        ],
+        "used_retrieval": false,
+        "last_user_question_before_run": "Summarize the difference between parametric and non-parametric memory.",
+        "recent_episodes_count_before_run": 4
+      },
+      {
+        "ts_utc": 1769050194.6258283,
+        "question": "What does RAG mean in large language models?",
+        "plan_actions": [
+          "noop"
+        ],
+        "used_retrieval": false,
+        "last_user_question_before_run": "Explain that difference again, briefly.",
+        "recent_episodes_count_before_run": 5
+      },
+      {
+        "ts_utc": 1769050202.4568102,
+        "question": "What is RAG?",
+        "plan_actions": [
+          "noop"
+        ],
+        "used_retrieval": false,
+        "last_user_question_before_run": "What does RAG mean in large language models?",
+        "recent_episodes_count_before_run": 6
+      },
+      {
+        "ts_utc": 1769050234.4358745,
+        "question": "Summarize the difference between parametric and non-parametric memory.",
+        "plan_actions": [
+          "retrieve"
+        ],
+        "used_retrieval": true,
+        "last_user_question_before_run": "What is RAG?",
+        "recent_episodes_count_before_run": 7
+      },
+      {
+        "ts_utc": 1769050244.9300969,
+        "question": "Explain that difference again, briefly.",
+        "plan_actions": [
+          "retrieve"
+        ],
+        "used_retrieval": true,
+        "last_user_question_before_run": "Summarize the difference between parametric and non-parametric memory.",
+        "recent_episodes_count_before_run": 8
+      }
+    ],
+    "semantic_reads": {
+      "last_user_question": "Explain that difference again, briefly."
+    }
+  },
+  "planner": {
+    "objective": "What BLEU score did Vaswani et al. report for EN–DE translation?",
+    "steps": [
+      {
+        "step_id": 1,
+        "action": "retrieve",
+        "args": {
+          "question": "What BLEU score did Vaswani et al. report for EN–DE translation?",
+          "k": 4
+        },
+        "rationale": "evidence-dependent request (source-specific)"
+      }
+    ]
+  },
+  "executor": {
+    "result": [
+      {
+        "step_id": 1,
+        "action": "retrieve",
+        "args": {
+          "question": "What BLEU score did Vaswani et al. report for EN–DE translation?",
+          "k": 4
+        },
+        "tool_result": {
+          "k": 4,
+          "mode": "hybrid",
+          "reranked": false,
+          "candidate_pool_size": 20,
+          "chunks": [
+            {
+              "chunk_id": 229,
+              "text": "e to no counterfactual data (i.e., what would have made Suppose we have 6 tokens (A, B, C, D, E, F) and k=2, an unsuccessful customer interaction y into a successful one and P(A)= 30%, and P(B)= 20%, P(C)= P(D)= P(E)= P(F)= l\n12.5%. In top-k sampling, tokens C, D, E, F are disregarded, RWKV: In [141], Peng et al. proposed a novel model and the model outputs A 60% of the time, and B, 40% of architecture, Receptance Weighted Key Value (RWKV), that the time. This approach ensures that we prioritize",
+              "score": {
+                "priority": 1,
+                "dense_rank": 6,
+                "dense_score": 0.17764795500460906,
+                "sparse_rank": 17,
+                "sparse_score": 6.89882807748611
+              },
+              "source": "Large Language Models A Survey.pdf"
+            },
+            {
+              "chunk_id": 345,
+              "text": "ag Accuracy Link Link Link AI2 Reasoning Accuracy Link Link Link Challenge(ARC) BoolQ Accuracy - Link Link MultiRC F1-score,Accuracy - Link Link CNN/DailyMail[200] Accuracy - Link - SQuAD F1-score,EM Link Link Link RACE Accuracy - Link Link CNN/DailyMail[201] ROUGE - Link Link Drop F1-score,EM Link Link Link QuAC F1-score,HEQ-Q,HEQ-D Link Link Link TriviaQA EM,F1-score,Accuracy Link Link Link NaturalQuestions EM,F1-score,Accuracy Link Link Link StrategyQA Accuracy,Recall@10,SARI Link Link Link C",
+              "score": {
+                "priority": 1,
+                "dense_rank": 7,
+                "dense_score": 0.17485925620731863,
+                "sparse_rank": 14,
+                "sparse_score": 7.504498724726453
+              },
+              "source": "Large Language Models A Survey.pdf"
+            },
+            {
+              "chunk_id": 42,
+              "text": "deranddecoderstacks. Forthebasemodel,weusearateof P =0.1. drop 7\nTable2: TheTransformerachievesbetterBLEUscoresthanpreviousstate-of-the-artmodelsonthe English-to-GermanandEnglish-to-Frenchnewstest2014testsatafractionofthetrainingcost. BLEU TrainingCost(FLOPs) Model EN-DE EN-FR EN-DE EN-FR ByteNet[15] 23.75 Deep-Att+PosUnk[32] 39.2 1.0·1020 GNMT+RL[31] 24.6 39.92 2.3·1019 1.4·1020 ConvS2S[8] 25.16 40.46 9.6·1018 1.5·1020 MoE[26] 26.03 40.56 2.0·1019 1.2·1020 Deep-Att+PosUnkEnsemble[32] 40.4 8.0·1",
+              "score": {
+                "priority": 2,
+                "dense_rank": null,
+                "dense_score": null,
+                "sparse_rank": 1,
+                "sparse_score": 16.705154011644698
+              },
+              "source": "Attention Is All You Need.pdf"
+            },
+            {
+              "chunk_id": 446,
+              "text": "printarXiv:2205.10487,2022. J. Casper, Z. Liu, S. Prabhumoye, G. Zerveas, V. Korthikanti [126] P. Shaw, J. Uszkoreit, and A. Vaswani, “Self-attention with relative et al., “Using deepspeed and megatron to train megatron-turing positionrepresentations,”arXivpreprintarXiv:1803.02155,2018. nlg 530b, a large-scale generative language model,” arXiv preprint arXiv:2201.11990,2022. [127] J. Su, Y. Lu, S. Pan, B. Wen, and Y. Liu, “Roformer: En- [102] I. Beltagy, M. E. Peters, and A. Cohan, “Longformer: ",
+              "score": {
+                "priority": 2,
+                "dense_rank": null,
+                "dense_score": null,
+                "sparse_rank": 2,
+                "sparse_score": 13.734250727489052
+              },
+              "source": "Large Language Models A Survey.pdf"
+            }
+          ]
+        },
+        "result_meta": {
+          "num_chunks": 4
+        }
+      }
+    ]
+  },
+  "working_memory": {
+    "goal": "What BLEU score did Vaswani et al. report for EN–DE translation?",
+    "thoughts": [
+      "Planner evaluating retrieval need for: What BLEU score did Vaswani et al. report for EN–DE translation?",
+      "Executed step 1: retrieve"
+    ],
+    "flags": {
+      "used_retrieval": true
+    }
+  },
+  "memory_events": [
+    {
+      "ts_utc": 1769285985.9241867,
+      "event_type": "read",
+      "store": "episodic",
+      "key": "tail:10",
+      "payload": {
+        "returned": 9
+      }
+    },
+    {
+      "ts_utc": 1769285985.9243314,
+      "event_type": "read",
+      "store": "semantic",
+      "key": "last_user_question",
+      "payload": {
+        "found": true
+      }
+    }
+  ]
+}

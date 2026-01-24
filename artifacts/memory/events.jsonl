@@ -38,3 +38,17 @@
 {"ts_utc": 1769050237.5686307, "event_type": "read", "store": "episodic", "key": "tail:10", "payload": {"returned": 8}}
 {"ts_utc": 1769050244.9299502, "event_type": "write", "store": "semantic", "key": "last_user_question", "payload": {"type": "str"}}
 {"ts_utc": 1769050244.9302201, "event_type": "write", "store": "episodic", "key": "append", "payload": {"keys": ["last_user_question_before_run", "plan_actions", "question", "recent_episodes_count_before_run", "ts_utc", "used_retrieval"]}}
+{"ts_utc": 1769285720.4666288, "event_type": "read", "store": "episodic", "key": "tail:5", "payload": {"returned": 5}}
+{"ts_utc": 1769285733.046169, "event_type": "read", "store": "episodic", "key": "tail:5", "payload": {"returned": 5}}
+{"ts_utc": 1769285985.9205294, "event_type": "read", "store": "episodic", "key": "tail:10", "payload": {"returned": 9}}
+{"ts_utc": 1769285985.9208462, "event_type": "read", "store": "semantic", "key": "last_user_question", "payload": {"found": true}}
+{"ts_utc": 1769285985.9228191, "event_type": "read", "store": "episodic", "key": "tail:10", "payload": {"returned": 9}}
+{"ts_utc": 1769285985.9229693, "event_type": "read", "store": "semantic", "key": "last_user_question", "payload": {"found": true}}
+{"ts_utc": 1769285985.9241867, "event_type": "read", "store": "episodic", "key": "tail:10", "payload": {"returned": 9}}
+{"ts_utc": 1769285985.9243314, "event_type": "read", "store": "semantic", "key": "last_user_question", "payload": {"found": true}}
+{"ts_utc": 1769285992.929948, "event_type": "read", "store": "episodic", "key": "tail:10", "payload": {"returned": 9}}
+{"ts_utc": 1769285992.9301383, "event_type": "read", "store": "semantic", "key": "last_user_question", "payload": {"found": true}}
+{"ts_utc": 1769285992.9314327, "event_type": "read", "store": "episodic", "key": "tail:10", "payload": {"returned": 9}}
+{"ts_utc": 1769285992.9316006, "event_type": "read", "store": "semantic", "key": "last_user_question", "payload": {"found": true}}
+{"ts_utc": 1769285992.933063, "event_type": "read", "store": "episodic", "key": "tail:10", "payload": {"returned": 9}}
+{"ts_utc": 1769285992.9332237, "event_type": "read", "store": "semantic", "key": "last_user_question", "payload": {"found": true}}

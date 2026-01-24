@@ -1,0 +1,165 @@
+{
+  "timestamp": "2026-01-24T20:19:52.930578",
+  "phase": "memory",
+  "query": "How many layers were used in the base transformer model in the original paper?",
+  "top_k": 4,
+  "metadata": {
+    "question_id": 3,
+    "memory_case": "M-B2",
+    "expected_memory_use": "YES",
+    "notes": "evidence-bound"
+  },
+  "memory_reads": {
+    "episodic_tail_n": 10,
+    "episodic_tail": [
+      {
+        "ts_utc": 1769050099.1388042,
+        "question": "What is parametric memory?",
+        "plan_actions": [
+          "noop"
+        ],
+        "used_retrieval": false,
+        "last_user_question_before_run": null,
+        "recent_episodes_count_before_run": 0
+      },
+      {
+        "ts_utc": 1769050128.253751,
+        "question": "What is parametric memory according to Attention Is All You Need?",
+        "plan_actions": [
+          "retrieve"
+        ],
+        "used_retrieval": true,
+        "last_user_question_before_run": "What is parametric memory?",
+        "recent_episodes_count_before_run": 1
+      },
+      {
+        "ts_utc": 1769050147.0115576,
+        "question": "What is parametric memory?",
+        "plan_actions": [
+          "retrieve"
+        ],
+        "used_retrieval": true,
+        "last_user_question_before_run": "What is parametric memory according to Attention Is All You Need?",
+        "recent_episodes_count_before_run": 2
+      },
+      {
+        "ts_utc": 1769050170.8831463,
+        "question": "Summarize the difference between parametric and non-parametric memory.",
+        "plan_actions": [
+          "retrieve"
+        ],
+        "used_retrieval": true,
+        "last_user_question_before_run": "What is parametric memory?",
+        "recent_episodes_count_before_run": 3
+      },
+      {
+        "ts_utc": 1769050176.0261626,
+        "question": "Explain that difference again, briefly.",
+        "plan_actions": [
+          "noop"
+        ],
+        "used_retrieval": false,
+        "last_user_question_before_run": "Summarize the difference between parametric and non-parametric memory.",
+        "recent_episodes_count_before_run": 4
+      },
+      {
+        "ts_utc": 1769050194.6258283,
+        "question": "What does RAG mean in large language models?",
+        "plan_actions": [
+          "noop"
+        ],
+        "used_retrieval": false,
+        "last_user_question_before_run": "Explain that difference again, briefly.",
+        "recent_episodes_count_before_run": 5
+      },
+      {
+        "ts_utc": 1769050202.4568102,
+        "question": "What is RAG?",
+        "plan_actions": [
+          "noop"
+        ],
+        "used_retrieval": false,
+        "last_user_question_before_run": "What does RAG mean in large language models?",
+        "recent_episodes_count_before_run": 6
+      },
+      {
+        "ts_utc": 1769050234.4358745,
+        "question": "Summarize the difference between parametric and non-parametric memory.",
+        "plan_actions": [
+          "retrieve"
+        ],
+        "used_retrieval": true,
+        "last_user_question_before_run": "What is RAG?",
+        "recent_episodes_count_before_run": 7
+      },
+      {
+        "ts_utc": 1769050244.9300969,
+        "question": "Explain that difference again, briefly.",
+        "plan_actions": [
+          "retrieve"
+        ],
+        "used_retrieval": true,
+        "last_user_question_before_run": "Summarize the difference between parametric and non-parametric memory.",
+        "recent_episodes_count_before_run": 8
+      }
+    ],
+    "semantic_reads": {
+      "last_user_question": "Explain that difference again, briefly."
+    }
+  },
+  "planner": {
+    "objective": "How many layers were used in the base transformer model in the original paper?",
+    "steps": [
+      {
+        "step_id": 1,
+        "action": "noop",
+        "args": {},
+        "rationale": "no strong evidence dependency detected"
+      }
+    ]
+  },
+  "executor": {
+    "result": [
+      {
+        "step_id": 1,
+        "action": "noop",
+        "args": {},
+        "tool_result": {
+          "status": "skipped",
+          "context": ""
+        },
+        "result_meta": {
+          "num_chunks": 0
+        }
+      }
+    ]
+  },
+  "working_memory": {
+    "goal": "How many layers were used in the base transformer model in the original paper?",
+    "thoughts": [
+      "Planner evaluating retrieval need for: How many layers were used in the base transformer model in the original paper?",
+      "Executed step 1: noop"
+    ],
+    "flags": {}
+  },
+  "memory_events": [
+    {
+      "ts_utc": 1769285992.929948,
+      "event_type": "read",
+      "store": "episodic",
+      "key": "tail:10",
+      "payload": {
+        "returned": 9
+      }
+    },
+    {
+      "ts_utc": 1769285992.9301383,
+      "event_type": "read",
+      "store": "semantic",
+      "key": "last_user_question",
+      "payload": {
+        "found": true
+      }
+    }
+  ]
+}
