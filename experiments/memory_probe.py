@@ -2,7 +2,7 @@
 from pathlib import Path
 import pandas as pd
 
-from tools.memory_trace import traced_memory_run
+from tools.trace.memory_trace import traced_memory_run
 
 QUESTIONS_PATH = "artifacts/failure_cases/questions/memory_questions.xlsx"
 TRACE_DIR = Path("artifacts/failure_cases/traces/memory")

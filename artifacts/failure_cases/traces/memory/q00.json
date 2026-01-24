@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-24T20:19:45.921579",
+  "timestamp": "2026-01-24T20:41:53.933817",
   "phase": "memory",
   "query": "What is self-attention in transformer models?",
   "top_k": 4,
@@ -144,7 +144,7 @@
   },
   "memory_events": [
     {
-      "ts_utc": 1769285985.9205294,
+      "ts_utc": 1769287313.9329062,
       "event_type": "read",
       "store": "episodic",
       "key": "tail:10",
@@ -153,7 +153,7 @@
       }
     },
     {
-      "ts_utc": 1769285985.9208462,
+      "ts_utc": 1769287313.9331117,
       "event_type": "read",
       "store": "semantic",
       "key": "last_user_question",

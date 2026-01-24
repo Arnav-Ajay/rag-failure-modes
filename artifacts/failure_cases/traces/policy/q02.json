@@ -1,0 +1,31 @@
+{
+  "timestamp": 1769287304.6985953,
+  "question": "How many layers were used in the base transformer model?",
+  "policy": {
+    "episodic_tail_len": 9,
+    "policy_signal": true
+  },
+  "planner": {
+    "steps": [
+      {
+        "step_id": 1,
+        "action": "retrieve",
+        "args": {
+          "question": "How many layers were used in the base transformer model?",
+          "k": 4
+        },
+        "rationale": "retrieval chosen despite parametric uncertainty due to memory signal"
+      }
+    ],
+    "thoughts": [
+      "Planner evaluating retrieval need for: How many layers were used in the base transformer model?",
+      "Memory advises retrieval"
+    ]
+  },
+  "metadata": {
+    "question_id": 2,
+    "policy_case": "P-C1",
+    "expected_retrieval": "RETRIEVE",
+    "phase": "policy"
+  }
+}

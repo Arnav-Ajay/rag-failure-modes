@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-24T20:19:52.928345",
+  "timestamp": "2026-01-24T20:42:00.769130",
   "phase": "memory",
   "query": "What BLEU score did Vaswani et al. report for EN–DE translation?",
   "top_k": 4,
@@ -204,7 +204,7 @@
   },
   "memory_events": [
     {
-      "ts_utc": 1769285985.9241867,
+      "ts_utc": 1769287313.938123,
       "event_type": "read",
       "store": "episodic",
       "key": "tail:10",
@@ -213,7 +213,7 @@
       }
     },
     {
-      "ts_utc": 1769285985.9243314,
+      "ts_utc": 1769287313.9382687,
       "event_type": "read",
       "store": "semantic",
       "key": "last_user_question",

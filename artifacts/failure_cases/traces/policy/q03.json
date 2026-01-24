@@ -1,0 +1,31 @@
+{
+  "timestamp": 1769287304.699365,
+  "question": "What is self-attention in transformer models? (repeat after retrieval)",
+  "policy": {
+    "episodic_tail_len": 9,
+    "policy_signal": true
+  },
+  "planner": {
+    "steps": [
+      {
+        "step_id": 1,
+        "action": "retrieve",
+        "args": {
+          "question": "What is self-attention in transformer models? (repeat after retrieval)",
+          "k": 4
+        },
+        "rationale": "retrieval chosen despite parametric uncertainty due to memory signal"
+      }
+    ],
+    "thoughts": [
+      "Planner evaluating retrieval need for: What is self-attention in transformer models? (repeat after retrieval)",
+      "Memory advises retrieval"
+    ]
+  },
+  "metadata": {
+    "question_id": 3,
+    "policy_case": "P-D1",
+    "expected_retrieval": "NOOP",
+    "phase": "policy"
+  }
+}

@@ -2,7 +2,7 @@
 from pathlib import Path
 import pandas as pd
 
-from tools.planner_trace import traced_planner_plan
+from tools.trace.planner_trace import traced_planner_plan
 
 QUESTIONS_PATH = "artifacts/failure_cases/questions/planner_executor_questions.xlsx"
 TRACE_DIR = Path("artifacts/failure_cases/traces/planner")

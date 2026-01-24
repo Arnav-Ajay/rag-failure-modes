@@ -60,12 +60,14 @@ If the system breaks here, that is **desirable**.
 
 ## System Lineage (Assumed and Frozen)
 
-This repository assumes a **pre-existing, frozen system stack** built in earlier work. No new intelligence is added here.
+This repository assumes a **pre-existing, frozen system stack** built in earlier work.
+No new intelligence is added here.
 
 ### Foundations (Retrieval & Representation)
 
 * **Repository**:
   [`rag-systems-foundations`](https://github.com/Arnav-Ajay/rag-systems-foundations)
+
   Covers:
 
   * Chunking strategies
@@ -73,16 +75,17 @@ This repository assumes a **pre-existing, frozen system stack** built in earlier
   * Reranking
   * Retrieval evaluation discipline
 
-### Agent Architecture (Decision, Execution, Memory)
+### Agent Architecture (Decision, Execution, Memory, Policy)
 
 * **Repository**:
   [`agent-systems-core`](https://github.com/Arnav-Ajay/agent-systems-core)
+
   Covers:
 
   * Tool-using agents
   * Planner / executor separation
   * Memory systems (episodic + semantic)
-  * Policy-driven overrides
+  * **Policy-driven overrides**
 
 **All components from these repositories are treated as immutable inputs.**
 
@@ -96,7 +99,9 @@ This repository isolates failures **layer by layer**, rather than treating the s
 
 ### Layers Examined (So Far)
 
-#### 1. Retrieval Layer
+---
+
+### 1. Retrieval Layer
 
 Failures where:
 
@@ -105,11 +110,11 @@ Failures where:
 * Hybrid retrieval biases suppress correct chunks
 * Cross-document pollution occurs
 
-Retrieval is analyzed *without* changing planner or executor behavior.
+Retrieval is analyzed **independently**, without planner, executor, or policy intervention.
 
 ---
 
-#### 2. Planner Layer
+### 2. Planner Layer
 
 Failures where:
 
@@ -122,7 +127,7 @@ Planner analysis focuses on **decision correctness**, not answer quality.
 
 ---
 
-#### 3. Executor Layer
+### 3. Executor Layer
 
 Failures where:
 
@@ -138,33 +143,50 @@ In the current architecture, executor failures are structurally rare due to:
 * Deterministic tool dispatch
 * Absence of downstream generation or transformation
 
-This absence is itself an architectural property, not an oversight.
+This absence is itself an **architectural property**, not an oversight.
 
 ---
 
-#### 4. Memory Layer
+### 4. Memory Layer
 
 Failures where:
 
-* Semantic or episodic memory influences the current decision when it should not.
-* Information from a previous question leaks into the current run.
-* Semantic memory is treated as authoritative without validation.
-* Memory-based policy signal exists, but is ignored.
-* Memory is written when it shouldn’t be.
-* Memory influences behavior, but no trace shows it.
+* Semantic or episodic memory influences the current decision when it should not
+* Information from a previous question leaks into the current run
+* Semantic memory is treated as authoritative without validation
+* Memory-based policy signal exists, but is ignored
+* Memory is written when it shouldn’t be
+* Memory influences behavior, but no trace shows it
 
 **Finding:**
-In the current architecture, memory failures are structurally rare as the memory subsystem is causally isolated and well-behaved under baseline conditions.
+In the current architecture, memory failures are structurally rare because the memory subsystem is **causally isolated under baseline conditions**.
 
 That means:
 
 * No stale memory injection
-* No contamination
+* No cross-question contamination
 * No semantic authority abuse
 * No silent writes
 * No hidden influence
 
-Which is exactly where we want to be before introducing policy pressure.
+This establishes a **clean baseline** before policy pressure is applied.
+
+---
+
+### ➕ 5. Policy Layer
+
+Failures where:
+
+* Policy overrides planner decisions incorrectly
+* Retrieval is forced for parametric questions
+* Policy fires on insufficient or stale evidence
+* Planner rationale contradicts applied policy
+* Policy influence is not traceable in logs
+
+**Finding:**
+Policy introduces **intentional coupling** between memory and planning, and is the **first layer to reintroduce failure after memory isolation**.
+
+Policy failures are therefore analyzed as **deliberate regressions**, not accidental bugs.
 
 ---
 
@@ -178,27 +200,22 @@ Failure modes are:
 
 A failure is assigned to **exactly one layer**, even if downstream effects exist.
 
-Examples of failure classes under investigation include:
-
-* Retrieval skipped despite source-bound question
-* Retrieval invoked for purely parametric queries
-* Planner confidence collapse under ambiguity
-* Executor obedience masking planner mistakes
-* Correct answers produced for incorrect reasons
-
-These are **working classifications**, not final conclusions.
+Correct outputs produced for incorrect reasons are treated as **failures**, not successes.
 
 ---
 
 ## Artifacts Produced
 
-This repository produces **diagnostic artifacts**, not scores:
+This repository produces **diagnostic artifacts**, not metrics:
 
-* Per-layer execution traces (JSON): `artifacts\failure_cases\traces`
-* Layer-specific question sets: `artifacts\failure_cases\questions`
-* Layer-specific result sheets: `artifacts\failure_cases\results`
+* Per-layer execution traces (JSON):
+  `artifacts/failure_cases/traces`
+* Layer-specific question sets:
+  `artifacts/failure_cases/questions`
+* Layer-specific result sheets:
+  `artifacts/failure_cases/results`
 
-There is **no single evaluation metric**.
+There is **no single evaluation score**.
 
 ---
 
@@ -215,6 +232,7 @@ There is **no single evaluation metric**.
 
 * Planner decision traces
 * Executor execution traces
+* Memory and policy influence traces
 * Failure mode attribution
 * Explicit “ambiguous / undecidable” buckets
 
@@ -235,18 +253,5 @@ A separate repository (`llm-observability-logs`) will address:
 > **How do we observe and monitor these failures reliably in production systems?**
 
 Failure definition precedes observability instrumentation.
-
----
-
-## Status
-
-🚧 **Active analysis**
-
-* Retrieval, planner, and executor layers analyzed
-* Failure modes defined and exercised
-* Memory and policy influence intentionally deferred
-* No system changes introduced
-
-This repository will only move forward once each layer’s failure surface is understood.
 
 ---

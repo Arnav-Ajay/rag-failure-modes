@@ -1,0 +1,31 @@
+{
+  "timestamp": 1769287304.697284,
+  "question": "What BLEU score did Vaswani et al. report for EN–DE translation?",
+  "policy": {
+    "episodic_tail_len": 9,
+    "policy_signal": true
+  },
+  "planner": {
+    "steps": [
+      {
+        "step_id": 1,
+        "action": "retrieve",
+        "args": {
+          "question": "What BLEU score did Vaswani et al. report for EN–DE translation?",
+          "k": 4
+        },
+        "rationale": "evidence-dependent request (source-specific)"
+      }
+    ],
+    "thoughts": [
+      "Planner evaluating retrieval need for: What BLEU score did Vaswani et al. report for EN–DE translation?",
+      "Memory advises retrieval"
+    ]
+  },
+  "metadata": {
+    "question_id": 1,
+    "policy_case": "P-B1",
+    "expected_retrieval": "RETRIEVE",
+    "phase": "policy"
+  }
+}

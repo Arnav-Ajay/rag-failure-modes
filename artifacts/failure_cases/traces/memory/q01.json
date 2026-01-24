@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-24T20:19:45.923294",
+  "timestamp": "2026-01-24T20:41:53.935385",
   "phase": "memory",
   "query": "Why does attention allow parallel computation compared to RNNs?",
   "top_k": 4,
@@ -144,7 +144,7 @@
   },
   "memory_events": [
     {
-      "ts_utc": 1769285985.9228191,
+      "ts_utc": 1769287313.9348695,
       "event_type": "read",
       "store": "episodic",
       "key": "tail:10",
@@ -153,7 +153,7 @@
       }
     },
     {
-      "ts_utc": 1769285985.9229693,
+      "ts_utc": 1769287313.935031,
       "event_type": "read",
       "store": "semantic",
       "key": "last_user_question",

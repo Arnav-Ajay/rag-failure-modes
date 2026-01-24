@@ -3,7 +3,7 @@ from pathlib import Path
 import json
 import pandas as pd
 
-from tools.executor_trace import traced_executor_execute
+from tools.trace.executor_trace import traced_executor_execute
 from memory.working import WorkingMemory
 from planner.plan_schema import Plan, PlanStep
 

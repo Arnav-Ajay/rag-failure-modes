@@ -2,7 +2,7 @@
 from pathlib import Path
 from typing import Any, Dict
 import os
-from tools.retriever_trace import traced_hybrid_retriever
+from tools.trace.retriever_trace import traced_hybrid_retriever
 from tools.ingest import load_pdf, chunk_texts
 from tools.retriever_core import create_vector_store, create_bm25_index
 

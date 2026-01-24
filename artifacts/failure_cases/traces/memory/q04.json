@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-24T20:19:52.931937",
+  "timestamp": "2026-01-24T20:42:00.773307",
   "phase": "memory",
   "query": "What optimizer and learning rate schedule were used in Attention Is All You Need?",
   "top_k": 4,
@@ -144,7 +144,7 @@
   },
   "memory_events": [
     {
-      "ts_utc": 1769285992.9314327,
+      "ts_utc": 1769287320.7728202,
       "event_type": "read",
       "store": "episodic",
       "key": "tail:10",
@@ -153,7 +153,7 @@
       }
     },
     {
-      "ts_utc": 1769285992.9316006,
+      "ts_utc": 1769287320.7729826,
       "event_type": "read",
       "store": "semantic",
       "key": "last_user_question",
