@@ -1,0 +1,132 @@
+{
+  "timestamp": "2026-01-27T22:41:28.461783",
+  "metadata": {
+    "question_id": 2,
+    "question_text": "What aspect of recurrent neural networks prevents parallelization during training?",
+    "gold_chunk_id": 6,
+    "phase": "reranker",
+    "source": "retrieval_candidates + chunks_output"
+  },
+  "results": [
+    {
+      "chunk_id": 74,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 1,
+      "rerank_score": 0.3574074074073707
+    },
+    {
+      "chunk_id": 408,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 2,
+      "rerank_score": 0.3000390779508394
+    },
+    {
+      "chunk_id": 56,
+      "doc_id": "Attention Is All You Need.pdf",
+      "rerank_rank": 3,
+      "rerank_score": 0.2605723574782976
+    },
+    {
+      "chunk_id": 410,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 4,
+      "rerank_score": 0.18497745225421783
+    },
+    {
+      "chunk_id": 152,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 5,
+      "rerank_score": 0.1767164036610441
+    },
+    {
+      "chunk_id": 82,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 6,
+      "rerank_score": 0.11819700960862209
+    },
+    {
+      "chunk_id": 76,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 7,
+      "rerank_score": 0.1164429777483331
+    },
+    {
+      "chunk_id": 83,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 8,
+      "rerank_score": 0.10435265922288112
+    },
+    {
+      "chunk_id": 539,
+      "doc_id": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.pdf",
+      "rerank_rank": 9,
+      "rerank_score": 0.08845043886837567
+    },
+    {
+      "chunk_id": 230,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 10,
+      "rerank_score": 0.08790507859469113
+    },
+    {
+      "chunk_id": 247,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 11,
+      "rerank_score": 0.08790269155993694
+    },
+    {
+      "chunk_id": 302,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 12,
+      "rerank_score": 0.08746377743899315
+    },
+    {
+      "chunk_id": 607,
+      "doc_id": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.pdf",
+      "rerank_rank": 13,
+      "rerank_score": 0.07249654494918704
+    },
+    {
+      "chunk_id": 70,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 14,
+      "rerank_score": 0.07001863071381427
+    },
+    {
+      "chunk_id": 231,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 15,
+      "rerank_score": 0.057921934342896414
+    },
+    {
+      "chunk_id": 239,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 16,
+      "rerank_score": 0.04133588210233321
+    },
+    {
+      "chunk_id": 197,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 17,
+      "rerank_score": 0.0390226762419353
+    },
+    {
+      "chunk_id": 192,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 18,
+      "rerank_score": 0.03820518571982416
+    },
+    {
+      "chunk_id": 36,
+      "doc_id": "Attention Is All You Need.pdf",
+      "rerank_rank": 19,
+      "rerank_score": 0.024512237925818865
+    },
+    {
+      "chunk_id": 283,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 20,
+      "rerank_score": 0.01870748299319728
+    }
+  ]
+}

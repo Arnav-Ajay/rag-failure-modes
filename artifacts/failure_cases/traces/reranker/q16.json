@@ -1,0 +1,132 @@
+{
+  "timestamp": "2026-01-27T22:41:28.523327",
+  "metadata": {
+    "question_id": 16,
+    "question_text": "What mathematical functions are used to construct positional encodings?",
+    "gold_chunk_id": 30,
+    "phase": "reranker",
+    "source": "retrieval_candidates + chunks_output"
+  },
+  "results": [
+    {
+      "chunk_id": 212,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 1,
+      "rerank_score": 0.35588235294114967
+    },
+    {
+      "chunk_id": 199,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 2,
+      "rerank_score": 0.2900419352483321
+    },
+    {
+      "chunk_id": 244,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 3,
+      "rerank_score": 0.2069049187833072
+    },
+    {
+      "chunk_id": 207,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 4,
+      "rerank_score": 0.1386151806740292
+    },
+    {
+      "chunk_id": 211,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 5,
+      "rerank_score": 0.12574741314651453
+    },
+    {
+      "chunk_id": 186,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 6,
+      "rerank_score": 0.10341381869379021
+    },
+    {
+      "chunk_id": 198,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 7,
+      "rerank_score": 0.09966935939139998
+    },
+    {
+      "chunk_id": 192,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 8,
+      "rerank_score": 0.08849056302329478
+    },
+    {
+      "chunk_id": 204,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 9,
+      "rerank_score": 0.08820765964523064
+    },
+    {
+      "chunk_id": 253,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 10,
+      "rerank_score": 0.08618856344467354
+    },
+    {
+      "chunk_id": 88,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 11,
+      "rerank_score": 0.06663345401495144
+    },
+    {
+      "chunk_id": 301,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 12,
+      "rerank_score": 0.06644913270665292
+    },
+    {
+      "chunk_id": 220,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 13,
+      "rerank_score": 0.05904596766378621
+    },
+    {
+      "chunk_id": 200,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 14,
+      "rerank_score": 0.05124727779732127
+    },
+    {
+      "chunk_id": 302,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 15,
+      "rerank_score": 0.04803692422590306
+    },
+    {
+      "chunk_id": 394,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 16,
+      "rerank_score": 0.04664748153619838
+    },
+    {
+      "chunk_id": 157,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 17,
+      "rerank_score": 0.04094832182771599
+    },
+    {
+      "chunk_id": 280,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 18,
+      "rerank_score": 0.033764532136024455
+    },
+    {
+      "chunk_id": 393,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 19,
+      "rerank_score": 0.03168331605283292
+    },
+    {
+      "chunk_id": 127,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 20,
+      "rerank_score": 0.01884057971014493
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "timestamp": "2026-01-27T22:41:28.515667",
+  "metadata": {
+    "question_id": 15,
+    "question_text": "What is the functional form of the position-wise feed-forward network?",
+    "gold_chunk_id": 26,
+    "phase": "reranker",
+    "source": "retrieval_candidates + chunks_output"
+  },
+  "results": [
+    {
+      "chunk_id": 174,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 1,
+      "rerank_score": 0.37592592592590796
+    },
+    {
+      "chunk_id": 213,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 2,
+      "rerank_score": 0.2010742174952515
+    },
+    {
+      "chunk_id": 214,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 3,
+      "rerank_score": 0.19954468274607007
+    },
+    {
+      "chunk_id": 204,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 4,
+      "rerank_score": 0.17801887163273067
+    },
+    {
+      "chunk_id": 205,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 5,
+      "rerank_score": 0.14685961473599532
+    },
+    {
+      "chunk_id": 206,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 6,
+      "rerank_score": 0.09835606429476748
+    },
+    {
+      "chunk_id": 244,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 7,
+      "rerank_score": 0.08686242003223787
+    },
+    {
+      "chunk_id": 192,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 8,
+      "rerank_score": 0.08206422993290201
+    },
+    {
+      "chunk_id": 66,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 9,
+      "rerank_score": 0.031298547012737404
+    },
+    {
+      "chunk_id": 13,
+      "doc_id": "Attention Is All You Need.pdf",
+      "rerank_rank": 10,
+      "rerank_score": 0.028968753339582612
+    },
+    {
+      "chunk_id": 292,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 11,
+      "rerank_score": 0.02834073150354724
+    },
+    {
+      "chunk_id": 286,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 12,
+      "rerank_score": 0.027435176951160583
+    },
+    {
+      "chunk_id": 148,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 13,
+      "rerank_score": 0.027115236359433414
+    },
+    {
+      "chunk_id": 104,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 14,
+      "rerank_score": 0.02302219325870607
+    },
+    {
+      "chunk_id": 14,
+      "doc_id": "Attention Is All You Need.pdf",
+      "rerank_rank": 15,
+      "rerank_score": 0.022693729456943822
+    },
+    {
+      "chunk_id": 282,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 16,
+      "rerank_score": 0.019598474637589958
+    },
+    {
+      "chunk_id": 245,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 17,
+      "rerank_score": 0.018627450980392157
+    },
+    {
+      "chunk_id": 302,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 18,
+      "rerank_score": 0.01830732638393158
+    },
+    {
+      "chunk_id": 105,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 19,
+      "rerank_score": 0.012342732090834306
+    },
+    {
+      "chunk_id": 243,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 20,
+      "rerank_score": 0.0050299728558017304
+    }
+  ]
+}

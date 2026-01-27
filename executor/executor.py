@@ -9,7 +9,7 @@ class Executor:
         for step in plan.steps:
             if not isinstance(step.args, dict):
                 raise TypeError(f"Step {step.step_id} args must be a dict")
-            
+
             TOOL_MAP = {
                 "retrieve": retrieve_tool,
                 "noop": noop_tool,
@@ -17,8 +17,8 @@ class Executor:
 
             tool_fn = TOOL_MAP.get(step.action)
             if not tool_fn:
-                raise ValueError(f"Unkown action: {step.action}")
-            
+                raise ValueError(f"Unknown action: {step.action}")
+
             result = tool_fn(**step.args)
 
             if wm is not None:
@@ -28,7 +28,8 @@ class Executor:
 
                 if step.action == "retrieve":
                     wm.flags["used_retrieval"] = True
-            
+
+
             execution_trace.append({
                 "step_id": step.step_id,
                 "action": step.action,

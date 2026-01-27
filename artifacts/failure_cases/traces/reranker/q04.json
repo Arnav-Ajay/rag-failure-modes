@@ -1,0 +1,132 @@
+{
+  "timestamp": "2026-01-27T22:41:28.469457",
+  "metadata": {
+    "question_id": 4,
+    "question_text": "What mechanism does the Transformer rely on instead of recurrence?",
+    "gold_chunk_id": 8,
+    "phase": "reranker",
+    "source": "retrieval_candidates + chunks_output"
+  },
+  "results": [
+    {
+      "chunk_id": 171,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 1,
+      "rerank_score": 0.3550847457626769
+    },
+    {
+      "chunk_id": 1,
+      "doc_id": "Attention Is All You Need.pdf",
+      "rerank_rank": 2,
+      "rerank_score": 0.20224110929427266
+    },
+    {
+      "chunk_id": 510,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 3,
+      "rerank_score": 0.17693675446237403
+    },
+    {
+      "chunk_id": 542,
+      "doc_id": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.pdf",
+      "rerank_rank": 4,
+      "rerank_score": 0.1675727122503441
+    },
+    {
+      "chunk_id": 390,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 5,
+      "rerank_score": 0.14037105608113173
+    },
+    {
+      "chunk_id": 128,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 6,
+      "rerank_score": 0.1283624764197754
+    },
+    {
+      "chunk_id": 387,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 7,
+      "rerank_score": 0.11330793441495626
+    },
+    {
+      "chunk_id": 111,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 8,
+      "rerank_score": 0.10517010878613087
+    },
+    {
+      "chunk_id": 207,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 9,
+      "rerank_score": 0.10195022218207789
+    },
+    {
+      "chunk_id": 302,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 10,
+      "rerank_score": 0.0875332922497147
+    },
+    {
+      "chunk_id": 190,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 11,
+      "rerank_score": 0.08679900872992878
+    },
+    {
+      "chunk_id": 191,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 12,
+      "rerank_score": 0.08385265863015226
+    },
+    {
+      "chunk_id": 104,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 13,
+      "rerank_score": 0.06671855732894784
+    },
+    {
+      "chunk_id": 539,
+      "doc_id": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.pdf",
+      "rerank_rank": 14,
+      "rerank_score": 0.06064196154924004
+    },
+    {
+      "chunk_id": 253,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 15,
+      "rerank_score": 0.03846038077752137
+    },
+    {
+      "chunk_id": 348,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 16,
+      "rerank_score": 0.034991883146877914
+    },
+    {
+      "chunk_id": 109,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 17,
+      "rerank_score": 0.03262232587731449
+    },
+    {
+      "chunk_id": 105,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 18,
+      "rerank_score": 0.029750290756509833
+    },
+    {
+      "chunk_id": 192,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 19,
+      "rerank_score": 0.01913796791540065
+    },
+    {
+      "chunk_id": 210,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 20,
+      "rerank_score": 0.0
+    }
+  ]
+}

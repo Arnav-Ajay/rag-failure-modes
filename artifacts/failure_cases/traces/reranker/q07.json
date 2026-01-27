@@ -1,0 +1,132 @@
+{
+  "timestamp": "2026-01-27T22:41:28.484806",
+  "metadata": {
+    "question_id": 7,
+    "question_text": "What distinguishes the Transformer from earlier transduction models?",
+    "gold_chunk_id": 11,
+    "phase": "reranker",
+    "source": "retrieval_candidates + chunks_output"
+  },
+  "results": [
+    {
+      "chunk_id": 11,
+      "doc_id": "Attention Is All You Need.pdf",
+      "rerank_rank": 1,
+      "rerank_score": 0.3404761904761477
+    },
+    {
+      "chunk_id": 248,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 2,
+      "rerank_score": 0.26800617468374227
+    },
+    {
+      "chunk_id": 111,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 3,
+      "rerank_score": 0.17835148860489564
+    },
+    {
+      "chunk_id": 302,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 4,
+      "rerank_score": 0.1116325311725879
+    },
+    {
+      "chunk_id": 539,
+      "doc_id": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.pdf",
+      "rerank_rank": 5,
+      "rerank_score": 0.10934878590864097
+    },
+    {
+      "chunk_id": 150,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 6,
+      "rerank_score": 0.09685876040634558
+    },
+    {
+      "chunk_id": 228,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 7,
+      "rerank_score": 0.08455592487685537
+    },
+    {
+      "chunk_id": 348,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 8,
+      "rerank_score": 0.07484252599619683
+    },
+    {
+      "chunk_id": 496,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 9,
+      "rerank_score": 0.07411793550903711
+    },
+    {
+      "chunk_id": 155,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 10,
+      "rerank_score": 0.07374229905799215
+    },
+    {
+      "chunk_id": 1,
+      "doc_id": "Attention Is All You Need.pdf",
+      "rerank_rank": 11,
+      "rerank_score": 0.0612843095398591
+    },
+    {
+      "chunk_id": 386,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 12,
+      "rerank_score": 0.060827261057382814
+    },
+    {
+      "chunk_id": 331,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 13,
+      "rerank_score": 0.059259586627401925
+    },
+    {
+      "chunk_id": 379,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 14,
+      "rerank_score": 0.04349947748616608
+    },
+    {
+      "chunk_id": 253,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 15,
+      "rerank_score": 0.043453390498921905
+    },
+    {
+      "chunk_id": 170,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 16,
+      "rerank_score": 0.03913997381868339
+    },
+    {
+      "chunk_id": 169,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 17,
+      "rerank_score": 0.03009114106583183
+    },
+    {
+      "chunk_id": 214,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 18,
+      "rerank_score": 0.02845258766223296
+    },
+    {
+      "chunk_id": 127,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 19,
+      "rerank_score": 0.022850998093312248
+    },
+    {
+      "chunk_id": 182,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 20,
+      "rerank_score": 0.019230769230769232
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "timestamp": "2026-01-27T22:41:28.453809",
+  "metadata": {
+    "question_id": 1,
+    "question_text": "What architectural components are removed in the Transformer model?",
+    "gold_chunk_id": 1,
+    "phase": "reranker",
+    "source": "retrieval_candidates + chunks_output"
+  },
+  "results": [
+    {
+      "chunk_id": 386,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 1,
+      "rerank_score": 0.3382113821137716
+    },
+    {
+      "chunk_id": 539,
+      "doc_id": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.pdf",
+      "rerank_rank": 2,
+      "rerank_score": 0.2666503947182135
+    },
+    {
+      "chunk_id": 111,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 3,
+      "rerank_score": 0.2142868892594657
+    },
+    {
+      "chunk_id": 290,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 4,
+      "rerank_score": 0.14050639160942496
+    },
+    {
+      "chunk_id": 170,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 5,
+      "rerank_score": 0.11547931078132953
+    },
+    {
+      "chunk_id": 389,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 6,
+      "rerank_score": 0.11203097751629416
+    },
+    {
+      "chunk_id": 302,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 7,
+      "rerank_score": 0.10785681995469862
+    },
+    {
+      "chunk_id": 212,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 8,
+      "rerank_score": 0.10784347922958917
+    },
+    {
+      "chunk_id": 105,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 9,
+      "rerank_score": 0.09543146316086636
+    },
+    {
+      "chunk_id": 229,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 10,
+      "rerank_score": 0.09541421370077197
+    },
+    {
+      "chunk_id": 385,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 11,
+      "rerank_score": 0.09316820184087754
+    },
+    {
+      "chunk_id": 502,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 12,
+      "rerank_score": 0.0929702632304932
+    },
+    {
+      "chunk_id": 155,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 13,
+      "rerank_score": 0.08768745863330421
+    },
+    {
+      "chunk_id": 214,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 14,
+      "rerank_score": 0.07905619568712167
+    },
+    {
+      "chunk_id": 192,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 15,
+      "rerank_score": 0.06364804409423132
+    },
+    {
+      "chunk_id": 253,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 16,
+      "rerank_score": 0.06051481794768568
+    },
+    {
+      "chunk_id": 288,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 17,
+      "rerank_score": 0.05229740903036573
+    },
+    {
+      "chunk_id": 188,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 18,
+      "rerank_score": 0.04968303732659099
+    },
+    {
+      "chunk_id": 109,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 19,
+      "rerank_score": 0.04460712801515862
+    },
+    {
+      "chunk_id": 198,
+      "doc_id": "Large Language Models A Survey.pdf",
+      "rerank_rank": 20,
+      "rerank_score": 0.03717948717948718
+    }
+  ]
+}
