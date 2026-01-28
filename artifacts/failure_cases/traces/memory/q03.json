@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-24T20:42:00.771683",
+  "timestamp": "2026-01-27T22:42:12.956157",
   "phase": "memory",
   "query": "How many layers were used in the base transformer model in the original paper?",
   "top_k": 4,
@@ -12,26 +12,6 @@
   "memory_reads": {
     "episodic_tail_n": 10,
     "episodic_tail": [
-      {
-        "ts_utc": 1769050099.1388042,
-        "question": "What is parametric memory?",
-        "plan_actions": [
-          "noop"
-        ],
-        "used_retrieval": false,
-        "last_user_question_before_run": null,
-        "recent_episodes_count_before_run": 0
-      },
-      {
-        "ts_utc": 1769050128.253751,
-        "question": "What is parametric memory according to Attention Is All You Need?",
-        "plan_actions": [
-          "retrieve"
-        ],
-        "used_retrieval": true,
-        "last_user_question_before_run": "What is parametric memory?",
-        "recent_episodes_count_before_run": 1
-      },
       {
         "ts_utc": 1769050147.0115576,
         "question": "What is parametric memory?",
@@ -101,10 +81,76 @@
         "used_retrieval": true,
         "last_user_question_before_run": "Summarize the difference between parametric and non-parametric memory.",
         "recent_episodes_count_before_run": 8
+      },
+      {
+        "ts_utc": 1769391337.9966757,
+        "question": "What is parametric memory?",
+        "plan_actions": [
+          "noop"
+        ],
+        "used_retrieval": false,
+        "last_user_question_before_run": "Explain that difference again, briefly.",
+        "recent_episode_count_before_run": 9,
+        "event": "evidence_assessment",
+        "executor_decision": "noop",
+        "evidence_assessment": {
+          "evidence_present": false,
+          "sufficiency": "insufficient",
+          "max_similarity": 0.0,
+          "coverage_score": 0.0,
+          "conflicting_sources": false,
+          "rationale": "No retrieval executed; no external evidence available."
+        },
+        "generation_policy_decision": "refuse",
+        "produced_text": true
+      },
+      {
+        "ts_utc": 1769391355.2254858,
+        "question": "2. What is parametric memory according to Attention Is All You Need?",
+        "plan_actions": [
+          "retrieve"
+        ],
+        "used_retrieval": true,
+        "last_user_question_before_run": "What is parametric memory?",
+        "recent_episode_count_before_run": 10,
+        "event": "evidence_assessment",
+        "executor_decision": "retrieve",
+        "evidence_assessment": {
+          "evidence_present": false,
+          "sufficiency": "insufficient",
+          "max_similarity": 0.34122807017540796,
+          "coverage_score": 0.5,
+          "conflicting_sources": false,
+          "rationale": "No chunk met similarity threshold (0.75)."
+        },
+        "generation_policy_decision": "refuse",
+        "produced_text": true
+      },
+      {
+        "ts_utc": 1769391385.0103314,
+        "question": "Summarize the difference between parametric and non-parametric memory.",
+        "plan_actions": [
+          "retrieve"
+        ],
+        "used_retrieval": true,
+        "last_user_question_before_run": "2. What is parametric memory according to Attention Is All You Need?",
+        "recent_episode_count_before_run": 10,
+        "event": "evidence_assessment",
+        "executor_decision": "retrieve",
+        "evidence_assessment": {
+          "evidence_present": false,
+          "sufficiency": "insufficient",
+          "max_similarity": 0.34909090909088636,
+          "coverage_score": 0.8,
+          "conflicting_sources": false,
+          "rationale": "No chunk met similarity threshold (0.75)."
+        },
+        "generation_policy_decision": "refuse",
+        "produced_text": true
       }
     ],
     "semantic_reads": {
-      "last_user_question": "Explain that difference again, briefly."
+      "last_user_question": "Summarize the difference between parametric and non-parametric memory."
     }
   },
   "planner": {
@@ -144,16 +190,16 @@
   },
   "memory_events": [
     {
-      "ts_utc": 1769287320.7710495,
+      "ts_utc": 1769553732.955305,
       "event_type": "read",
       "store": "episodic",
       "key": "tail:10",
       "payload": {
-        "returned": 9
+        "returned": 10
       }
     },
     {
-      "ts_utc": 1769287320.771222,
+      "ts_utc": 1769553732.9555056,
       "event_type": "read",
       "store": "semantic",
       "key": "last_user_question",

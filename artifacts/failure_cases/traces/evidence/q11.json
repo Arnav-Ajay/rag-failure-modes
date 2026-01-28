@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-01-27T18:13:16.162419",
+  "question": "Why is masking applied in the decoder self-attention layer?",
+  "metadata": {
+    "question_id": 11,
+    "phase": "evidence",
+    "expected_evidence_sufficient": "YES"
+  },
+  "inputs": {
+    "num_chunks": 20,
+    "chunk_ids": [
+      16,
+      174,
+      15,
+      173,
+      214,
+      24,
+      386,
+      34,
+      200,
+      114,
+      245,
+      10,
+      105,
+      14,
+      213,
+      29,
+      86,
+      32,
+      205,
+      90
+    ]
+  },
+  "assessment": {
+    "evidence_sufficient": true,
+    "max_similarity": 19.69035338836192,
+    "rationale": "Multiple high-scoring sources retrieved; treat as potentially conflicting.",
+    "sufficiency": "conflicting"
+  }
+}

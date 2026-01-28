@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-01-27T18:13:16.162856",
+  "question": "What is the functional form of the position-wise feed-forward network?",
+  "metadata": {
+    "question_id": 15,
+    "phase": "evidence",
+    "expected_evidence_sufficient": "YES"
+  },
+  "inputs": {
+    "num_chunks": 20,
+    "chunk_ids": [
+      174,
+      213,
+      214,
+      204,
+      205,
+      244,
+      206,
+      192,
+      13,
+      302,
+      66,
+      105,
+      292,
+      286,
+      148,
+      104,
+      14,
+      243,
+      282,
+      245
+    ]
+  },
+  "assessment": {
+    "evidence_sufficient": true,
+    "max_similarity": 24.206069239107862,
+    "rationale": "Multiple high-scoring sources retrieved; treat as potentially conflicting.",
+    "sufficiency": "conflicting"
+  }
+}

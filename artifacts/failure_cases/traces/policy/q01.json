@@ -1,8 +1,8 @@
 {
-  "timestamp": 1769287304.697284,
+  "timestamp": 1769553741.9956155,
   "question": "What BLEU score did Vaswani et al. report for EN–DE translation?",
   "policy": {
-    "episodic_tail_len": 9,
+    "episodic_tail_len": 10,
     "policy_signal": true
   },
   "planner": {

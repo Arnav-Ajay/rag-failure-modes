@@ -1,8 +1,10 @@
+# tools/retrieve_tool.py
 from __future__ import annotations
 import os
 from dataclasses import dataclass
 from typing import Dict, Any
 
+# --- imports from your old repos ---
 from tools.retriever_core import (
     create_vector_store,
     create_bm25_index,
@@ -10,6 +12,7 @@ from tools.retriever_core import (
 )
 from tools.reranker_core import rerank_candidates
 from tools.ingest import load_pdf, chunk_texts
+
 
 # --------------
 # Data contracts 
@@ -22,19 +25,23 @@ class RetrievedChunk:
     score: float | Dict[str, Any]
     source: str
 
+
 # -------------------------
 # Corpus bootstrap (cached)
 # -------------------------
 
 _CORPUS_CACHE: Dict[str, Any] = {}
-PDF_DIR = "data/input_pdfs/"
 
-def _load_corpus(pdf_dir: str, chunking_strategy: str="fixed",
-                 max_chunks: int=1000,):
+
+def _load_corpus(
+    pdf_dir: str,
+    chunking_strategy: str = "fixed",
+    max_chunks: int = 1000,
+):
     cache_key = f"{pdf_dir}:{chunking_strategy}:{max_chunks}"
     if cache_key in _CORPUS_CACHE:
         return _CORPUS_CACHE[cache_key]
-    
+
     all_chunks = {}
     global_chunk_id = 0
 
@@ -66,16 +73,21 @@ def _load_corpus(pdf_dir: str, chunking_strategy: str="fixed",
     _CORPUS_CACHE[cache_key] = payload
     return payload
 
+
 # --------------
 # Retrieval Tool
 # --------------
 
-def retrieve_tool(question: str, k: int = 4, pdf_dir: str = PDF_DIR,
-    chunking_strategy: str = "fixed", enable_rerank: bool = False,) -> Dict[str, Any]:
-    
+def retrieve_tool(
+    question: str,
+    k: int = 4,
+    pdf_dir: str = "data/input_pdfs/",
+    enable_rerank: bool = True,
+) -> Dict[str, Any]:
+
     corpus = _load_corpus(
         pdf_dir=pdf_dir,
-        chunking_strategy=chunking_strategy,
+        chunking_strategy="fixed",
     )
 
     raw_results = hybrid_retriever(

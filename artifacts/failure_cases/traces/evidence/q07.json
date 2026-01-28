@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-01-27T18:13:16.160920",
+  "question": "What distinguishes the Transformer from earlier transduction models?",
+  "metadata": {
+    "question_id": 7,
+    "phase": "evidence",
+    "expected_evidence_sufficient": "YES"
+  },
+  "inputs": {
+    "num_chunks": 20,
+    "chunk_ids": [
+      1,
+      11,
+      248,
+      111,
+      302,
+      539,
+      228,
+      150,
+      348,
+      331,
+      496,
+      155,
+      379,
+      386,
+      170,
+      169,
+      214,
+      253,
+      127,
+      182
+    ]
+  },
+  "assessment": {
+    "evidence_sufficient": true,
+    "max_similarity": 12.240534188383041,
+    "rationale": "Multiple high-scoring sources retrieved; treat as potentially conflicting.",
+    "sufficiency": "conflicting"
+  }
+}

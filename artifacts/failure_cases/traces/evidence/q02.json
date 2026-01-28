@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-01-27T18:13:16.159431",
+  "question": "What aspect of recurrent neural networks prevents parallelization during training?",
+  "metadata": {
+    "question_id": 2,
+    "phase": "evidence",
+    "expected_evidence_sufficient": "YES"
+  },
+  "inputs": {
+    "num_chunks": 20,
+    "chunk_ids": [
+      56,
+      74,
+      408,
+      410,
+      152,
+      82,
+      76,
+      83,
+      230,
+      247,
+      302,
+      539,
+      607,
+      70,
+      231,
+      239,
+      197,
+      192,
+      36,
+      283
+    ]
+  },
+  "assessment": {
+    "evidence_sufficient": true,
+    "max_similarity": 13.96008030912957,
+    "rationale": "Multiple high-scoring sources retrieved; treat as potentially conflicting.",
+    "sufficiency": "conflicting"
+  }
+}

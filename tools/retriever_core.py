@@ -5,6 +5,7 @@ import numpy as np
 from collections import Counter, defaultdict
 
 # Function to embedd chunked text into vector
+# NOTE: This is a diagnostic embedding, not a semantic embedding
 def get_embedding(chunk):
     # Dummy embedding function: convert each character to its ASCII value and create a fixed-size vector
     embedding_size = 128
@@ -142,9 +143,9 @@ def sparse_retriever(query, bm25_index, top_k=50):
     scores.sort(key=lambda x: x[1], reverse=True)
     return scores[:top_k]
 
-# -------------------------
+# ---------------------------------------
 # Hybrid merge — explicit + deterministic
-# -------------------------
+# ----------------------------------------
 def hybrid_retriever(query, vector_store, bm25_index,
                     top_k=4, dense_top_n=20, sparse_top_n=42,
                     D=20, S=20):

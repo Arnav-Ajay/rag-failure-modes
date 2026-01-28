@@ -1,8 +1,8 @@
 {
-  "timestamp": 1769287304.6985953,
+  "timestamp": 1769553741.9964378,
   "question": "How many layers were used in the base transformer model?",
   "policy": {
-    "episodic_tail_len": 9,
+    "episodic_tail_len": 10,
     "policy_signal": true
   },
   "planner": {

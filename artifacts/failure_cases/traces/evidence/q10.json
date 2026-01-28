@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-01-27T18:13:16.161878",
+  "question": "What additional sub-layer is added to each decoder layer?",
+  "metadata": {
+    "question_id": 10,
+    "phase": "evidence",
+    "expected_evidence_sufficient": "YES"
+  },
+  "inputs": {
+    "num_chunks": 20,
+    "chunk_ids": [
+      15,
+      14,
+      173,
+      16,
+      114,
+      174,
+      13,
+      41,
+      201,
+      150,
+      26,
+      92,
+      214,
+      34,
+      103,
+      27,
+      192,
+      128,
+      240,
+      213
+    ]
+  },
+  "assessment": {
+    "evidence_sufficient": true,
+    "max_similarity": 24.466852945196656,
+    "rationale": "Multiple high-scoring sources retrieved; treat as potentially conflicting.",
+    "sufficiency": "conflicting"
+  }
+}

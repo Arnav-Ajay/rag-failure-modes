@@ -1,8 +1,8 @@
 {
-  "timestamp": 1769287304.7002366,
+  "timestamp": 1769553741.9985042,
   "question": "What optimizer and learning rate schedule were used in Attention Is All You Need?",
   "policy": {
-    "episodic_tail_len": 9,
+    "episodic_tail_len": 10,
     "policy_signal": true
   },
   "planner": {

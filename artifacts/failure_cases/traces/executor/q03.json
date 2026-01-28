@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-24T20:42:15.104373",
+  "timestamp": "2026-01-27T22:41:53.959261",
   "phase": "executor",
   "plan": {
     "objective": "What BLEU score did Vaswani et al. report for EN\u2013DE translation?",
@@ -26,55 +26,31 @@
       "tool_result": {
         "k": 4,
         "mode": "hybrid",
-        "reranked": false,
+        "reranked": true,
         "candidate_pool_size": 20,
         "chunks": [
           {
             "chunk_id": 229,
             "text": "e to no counterfactual data (i.e., what would have made Suppose we have 6 tokens (A, B, C, D, E, F) and k=2, an unsuccessful customer interaction y into a successful one and P(A)= 30%, and P(B)= 20%, P(C)= P(D)= P(E)= P(F)= l\n12.5%. In top-k sampling, tokens C, D, E, F are disregarded, RWKV: In [141], Peng et al. proposed a novel model and the model outputs A 60% of the time, and B, 40% of architecture, Receptance Weighted Key Value (RWKV), that the time. This approach ensures that we prioritize",
-            "score": {
-              "priority": 1,
-              "dense_rank": 6,
-              "dense_score": 0.17764795500460906,
-              "sparse_rank": 17,
-              "sparse_score": 6.89882807748611
-            },
+            "score": 0.4356457514782434,
             "source": "Large Language Models A Survey.pdf"
           },
           {
             "chunk_id": 345,
             "text": "ag Accuracy Link Link Link AI2 Reasoning Accuracy Link Link Link Challenge(ARC) BoolQ Accuracy - Link Link MultiRC F1-score,Accuracy - Link Link CNN/DailyMail[200] Accuracy - Link - SQuAD F1-score,EM Link Link Link RACE Accuracy - Link Link CNN/DailyMail[201] ROUGE - Link Link Drop F1-score,EM Link Link Link QuAC F1-score,HEQ-Q,HEQ-D Link Link Link TriviaQA EM,F1-score,Accuracy Link Link Link NaturalQuestions EM,F1-score,Accuracy Link Link Link StrategyQA Accuracy,Recall@10,SARI Link Link Link C",
-            "score": {
-              "priority": 1,
-              "dense_rank": 7,
-              "dense_score": 0.17485925620731863,
-              "sparse_rank": 14,
-              "sparse_score": 7.504498724726453
-            },
+            "score": 0.05056443103442995,
             "source": "Large Language Models A Survey.pdf"
           },
           {
             "chunk_id": 42,
             "text": "deranddecoderstacks. Forthebasemodel,weusearateof P =0.1. drop 7\nTable2: TheTransformerachievesbetterBLEUscoresthanpreviousstate-of-the-artmodelsonthe English-to-GermanandEnglish-to-Frenchnewstest2014testsatafractionofthetrainingcost. BLEU TrainingCost(FLOPs) Model EN-DE EN-FR EN-DE EN-FR ByteNet[15] 23.75 Deep-Att+PosUnk[32] 39.2 1.0\u00b71020 GNMT+RL[31] 24.6 39.92 2.3\u00b71019 1.4\u00b71020 ConvS2S[8] 25.16 40.46 9.6\u00b71018 1.5\u00b71020 MoE[26] 26.03 40.56 2.0\u00b71019 1.2\u00b71020 Deep-Att+PosUnkEnsemble[32] 40.4 8.0\u00b71",
-            "score": {
-              "priority": 2,
-              "dense_rank": null,
-              "dense_score": null,
-              "sparse_rank": 1,
-              "sparse_score": 16.705154011644698
-            },
+            "score": NaN,
             "source": "Attention Is All You Need.pdf"
           },
           {
             "chunk_id": 446,
             "text": "printarXiv:2205.10487,2022. J. Casper, Z. Liu, S. Prabhumoye, G. Zerveas, V. Korthikanti [126] P. Shaw, J. Uszkoreit, and A. Vaswani, \u201cSelf-attention with relative et al., \u201cUsing deepspeed and megatron to train megatron-turing positionrepresentations,\u201darXivpreprintarXiv:1803.02155,2018. nlg 530b, a large-scale generative language model,\u201d arXiv preprint arXiv:2201.11990,2022. [127] J. Su, Y. Lu, S. Pan, B. Wen, and Y. Liu, \u201cRoformer: En- [102] I. Beltagy, M. E. Peters, and A. Cohan, \u201cLongformer: ",
-            "score": {
-              "priority": 2,
-              "dense_rank": null,
-              "dense_score": null,
-              "sparse_rank": 2,
-              "sparse_score": 13.734250727489052
-            },
+            "score": NaN,
             "source": "Large Language Models A Survey.pdf"
           }
         ]

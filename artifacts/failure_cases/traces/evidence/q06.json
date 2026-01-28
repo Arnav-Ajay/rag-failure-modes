@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-01-27T18:13:16.160343",
+  "question": "How is self-attention defined?",
+  "metadata": {
+    "question_id": 6,
+    "phase": "evidence",
+    "expected_evidence_sufficient": "YES"
+  },
+  "inputs": {
+    "num_chunks": 20,
+    "chunk_ids": [
+      171,
+      10,
+      200,
+      206,
+      260,
+      29,
+      105,
+      259,
+      32,
+      386,
+      24,
+      164,
+      173,
+      86,
+      174,
+      205,
+      350,
+      201,
+      168,
+      310
+    ]
+  },
+  "assessment": {
+    "evidence_sufficient": true,
+    "max_similarity": 9.466363987450704,
+    "rationale": "Multiple high-scoring sources retrieved; treat as potentially conflicting.",
+    "sufficiency": "conflicting"
+  }
+}

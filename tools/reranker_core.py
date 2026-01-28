@@ -6,7 +6,6 @@ from typing import Dict, List
 import numpy as np
 import pandas as pd
 
-
 # -------------------------
 # Tokenization helpers
 # -------------------------
@@ -20,7 +19,6 @@ _STOPWORDS = {
     "before","during","about","between","within","without","not","no","can","could","should",
     "would","may","might","must","will","do","does","did"
 }
-
 
 def tokenize(text: str) -> List[str]:
     if not isinstance(text, str):
@@ -68,7 +66,6 @@ _PATTERNS = [
     r"\bshould\b",
 ]
 
-
 def pattern_score(text: str) -> float:
     if not isinstance(text, str):
         return 0.0
@@ -83,7 +80,6 @@ def length_penalty(text: str, min_chars: int = 200) -> float:
     if n >= min_chars:
         return 0.0
     return (min_chars - n) / min_chars
-
 
 # -------------------------
 # Normalization

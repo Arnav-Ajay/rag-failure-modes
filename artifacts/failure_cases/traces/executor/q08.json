@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-24T20:42:15.110670",
+  "timestamp": "2026-01-27T22:41:53.970137",
   "phase": "executor",
   "plan": {
     "objective": "Summarize Section 3.2 of Attention Is All You Need.",
@@ -26,55 +26,31 @@
       "tool_result": {
         "k": 4,
         "mode": "hybrid",
-        "reranked": false,
+        "reranked": true,
         "candidate_pool_size": 20,
         "chunks": [
           {
             "chunk_id": 0,
             "text": "Attention Is All You Need AshishVaswani\u2217 NoamShazeer\u2217 NikiParmar\u2217 JakobUszkoreit\u2217 GoogleBrain GoogleBrain GoogleResearch GoogleResearch avaswani@google.com noam@google.com nikip@google.com usz@google.com LlionJones\u2217 AidanN.Gomez\u2217 \u2020 \u0141ukaszKaiser\u2217 GoogleResearch UniversityofToronto GoogleBrain llion@google.com aidan@cs.toronto.edu lukaszkaiser@google.com IlliaPolosukhin\u2217 \u2021 illia.polosukhin@gmail.com Abstract Thedominantsequencetransductionmodelsarebasedoncomplexrecurrentor convolutionalneuralnetwo",
-            "score": {
-              "priority": 2,
-              "dense_rank": null,
-              "dense_score": null,
-              "sparse_rank": 1,
-              "sparse_score": 16.417919339940042
-            },
+            "score": 0.35810810810807675,
             "source": "Attention Is All You Need.pdf"
           },
           {
             "chunk_id": 631,
             "text": "ranAssociates,Inc.,2017. URL http://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf. [59] AshwinVijayakumar,MichaelCogswell,RamprasaathSelvaraju,QingSun,StefanLee,David Crandall,andDhruvBatra. Diversebeamsearchforimproveddescriptionofcomplexscenes. AAAIConferenceonArtificialIntelligence,2018. URLhttps://www.aaai.org/ocs/index. php/AAAI/AAAI18/paper/view/17329. [60] AlexWang,AmanpreetSingh,JulianMichael,FelixHill,OmerLevy,andSamuelBowman. GLUE: A multi-task benchmark and analysis platform",
-            "score": {
-              "priority": 2,
-              "dense_rank": null,
-              "dense_score": null,
-              "sparse_rank": 2,
-              "sparse_score": 15.809952239418047
-            },
+            "score": 0.33659177699421206,
             "source": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.pdf"
           },
           {
             "chunk_id": 413,
             "text": "ification:acomprehensive [22] O. Vinyals, A. Toshev, S. Bengio, and D. Erhan, \u201cShow and tell: review,\u201d ACM computing surveys (CSUR), vol. 54, no. 3, pp. 1\u201340, A neural image caption generator,\u201d in Proceedings of the IEEE 2021. conference on computer vision and pattern recognition, 2015, pp. [44] A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. 3156\u20133164. Gomez, L. Kaiser, and I. Polosukhin, \u201cAttention is all you need,\u201d [23] M.E.Peters,M.Neumann,M.Iyyer,M.Gardner,C.Clark,K.Lee, Ad",
-            "score": {
-              "priority": 2,
-              "dense_rank": null,
-              "dense_score": null,
-              "sparse_rank": 3,
-              "sparse_score": 14.70719167504969
-            },
+            "score": 0.3022261893989936,
             "source": "Large Language Models A Survey.pdf"
           },
           {
             "chunk_id": 487,
             "text": "5.10044, 2019. [Online]. S.Gopi,M.Javaheripi,P.Kauffmann,G.deRosa,O.Saarikivietal., Available:http://arxiv.org/abs/1905.10044 \u201cTextbooksareallyouneed,\u201darXivpreprintarXiv:2306.11644,2023.\n[209] Y. Li, S. Bubeck, R. Eldan, A. Del Giorno, S. Gunasekar, and Y. T. [237] prompttools. prompttools. [Online]. Available: https://github.com/ Lee, \u201cTextbooks are all you need ii: phi-1.5 technical report,\u201d arXiv hegelai/prompttools preprintarXiv:2309.05463,2023. [238] promptfoo. promptfoo. [Online]. Availabl",
-            "score": {
-              "priority": 2,
-              "dense_rank": null,
-              "dense_score": null,
-              "sparse_rank": 4,
-              "sparse_score": 10.73993280338038
-            },
+            "score": 0.15852466146245095,
             "source": "Large Language Models A Survey.pdf"
           }
         ]

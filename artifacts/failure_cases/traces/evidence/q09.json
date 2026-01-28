@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-01-27T18:13:16.161391",
+  "question": "What two sub-layers make up each encoder layer?",
+  "metadata": {
+    "question_id": 9,
+    "phase": "evidence",
+    "expected_evidence_sufficient": "YES"
+  },
+  "inputs": {
+    "num_chunks": 20,
+    "chunk_ids": [
+      14,
+      13,
+      173,
+      15,
+      26,
+      23,
+      174,
+      41,
+      152,
+      179,
+      240,
+      16,
+      114,
+      333,
+      331,
+      302,
+      386,
+      92,
+      204,
+      203
+    ]
+  },
+  "assessment": {
+    "evidence_sufficient": true,
+    "max_similarity": 26.996275817233183,
+    "rationale": "Multiple high-scoring sources retrieved; treat as potentially conflicting.",
+    "sufficiency": "conflicting"
+  }
+}

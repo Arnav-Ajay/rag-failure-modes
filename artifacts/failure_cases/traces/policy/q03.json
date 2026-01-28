@@ -1,8 +1,8 @@
 {
-  "timestamp": 1769287304.699365,
+  "timestamp": 1769553741.9975276,
   "question": "What is self-attention in transformer models? (repeat after retrieval)",
   "policy": {
-    "episodic_tail_len": 9,
+    "episodic_tail_len": 10,
     "policy_signal": true
   },
   "planner": {

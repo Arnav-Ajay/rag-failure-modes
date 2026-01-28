@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-01-27T18:13:16.158859",
+  "question": "What architectural components are removed in the Transformer model?",
+  "metadata": {
+    "question_id": 1,
+    "phase": "evidence",
+    "expected_evidence_sufficient": "YES"
+  },
+  "inputs": {
+    "num_chunks": 20,
+    "chunk_ids": [
+      386,
+      539,
+      111,
+      290,
+      389,
+      212,
+      302,
+      170,
+      229,
+      105,
+      502,
+      385,
+      155,
+      192,
+      253,
+      214,
+      288,
+      188,
+      109,
+      198
+    ]
+  },
+  "assessment": {
+    "evidence_sufficient": true,
+    "max_similarity": 12.159387387759628,
+    "rationale": "Multiple high-scoring sources retrieved; treat as potentially conflicting.",
+    "sufficiency": "conflicting"
+  }
+}
