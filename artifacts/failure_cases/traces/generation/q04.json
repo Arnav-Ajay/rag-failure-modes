@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-01-31T17:39:24.569000",
+  "phase": "generation",
+  "query": "What mechanism does the Transformer rely on instead of recurrence?",
+  "metadata": {
+    "question_id": 4,
+    "generation_case": "G-A3",
+    "expected_behavior": "HEDGE"
+  },
+  "evidence_summary": {
+    "evidence_present": true,
+    "sufficiency": "conflicting",
+    "max_similarity": 14.987067334723939,
+    "coverage_score": 0.0,
+    "conflicting_sources": true,
+    "rationale": "Multiple high-scoring sources retrieved; treat as potentially conflicting."
+  },
+  "policy_decision": {
+    "allowed": "hedge",
+    "refusal_code": null
+  },
+  "output": {
+    "type": "hedge",
+    "hedge_code": "conflicting_sources"
+  }
+}

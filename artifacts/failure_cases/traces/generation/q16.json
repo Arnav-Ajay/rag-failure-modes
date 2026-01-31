@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-01-31T17:39:24.571629",
+  "phase": "generation",
+  "query": "What mathematical functions are used to construct positional encodings?",
+  "metadata": {
+    "question_id": 16,
+    "generation_case": "G-C2",
+    "expected_behavior": "REFUSE"
+  },
+  "evidence_summary": {
+    "evidence_present": true,
+    "sufficiency": "insufficient",
+    "max_similarity": 17.187790098253807,
+    "coverage_score": 0.0,
+    "conflicting_sources": false,
+    "rationale": "Low key-term coverage (0.00 < 0.5)."
+  },
+  "policy_decision": {
+    "allowed": "refuse",
+    "refusal_code": "insufficient_coverage"
+  },
+  "output": {
+    "type": "answer",
+    "answer": "I don\u2019t have sufficient reliable information to answer this question.\n"
+  }
+}

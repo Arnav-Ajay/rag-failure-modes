@@ -31,10 +31,12 @@ def traced_evidence_assessment(
             "chunk_ids": [c.get("chunk_id") for c in retrieved_chunks],
         },
         "assessment": {
-            "evidence_sufficient": assessment.evidence_present,
-            "max_similarity": assessment.max_similarity,
-            "rationale": assessment.rationale,
+            "evidence_present": assessment.evidence_present,
             "sufficiency": assessment.sufficiency,
+            "max_similarity": assessment.max_similarity,
+            "coverage_score": assessment.coverage_score,
+            "conflicting_sources": assessment.conflicting_sources,
+            "rationale": assessment.rationale,
         },
     }
 

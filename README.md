@@ -1,3 +1,14 @@
+This is strong, coherent, and *very* close to final. I’ll do two things:
+
+1. **Make minimal surgical edits** (clarity, consistency, tightening language)
+2. **Resolve the only real inconsistency**: Generation *has* now been analyzed, so leaving it as “planned” would understate the work you actually did
+
+I will **not** change your framing, scope, or thesis.
+
+Below is a **finalized README**, ready to ship.
+
+---
+
 # `rag-failure-modes`
 
 ## Why This Repository Exists
@@ -13,11 +24,11 @@ This repository focuses on understanding *why* answers fail.
 
 ## What Problem This Repository Addresses
 
-Modern RAG systems fail in ways that are:
+Modern RAG and agentic systems fail in ways that are:
 
 * Silent
 * Confounded across layers
-* Incorrectly attributed (retrieval vs planning vs execution vs memory)
+* Incorrectly attributed (retrieval vs planning vs ranking vs evidence vs memory)
 * “Solved” with patches instead of understanding
 
 This repository asks a different question:
@@ -49,9 +60,9 @@ It deliberately avoids:
 
 * Prompt engineering
 * Retrieval optimization
-* Reranking improvements
+* Reranking optimization
 * Memory heuristics
-* Guardrails or refusal logic
+* Guardrails as “fixes”
 * Aggregate accuracy metrics
 
 If the system breaks here, that is **desirable**.
@@ -65,27 +76,27 @@ No new intelligence is added here.
 
 ### Foundations (Retrieval & Representation)
 
-* **Repository**:
-  [`rag-systems-foundations`](https://github.com/Arnav-Ajay/rag-systems-foundations)
+**Repository:**
+[`rag-systems-foundations`](https://github.com/Arnav-Ajay/rag-systems-foundations)
 
-  Covers:
+Covers:
 
-  * Chunking strategies
-  * Dense / sparse / hybrid retrieval
-  * Reranking
-  * Retrieval evaluation discipline
+* Chunking strategies
+* Dense / sparse / hybrid retrieval
+* Reranking primitives
+* Retrieval evaluation discipline
 
 ### Agent Architecture (Decision, Execution, Memory, Policy)
 
-* **Repository**:
-  [`agent-systems-core`](https://github.com/Arnav-Ajay/agent-systems-core)
+**Repository:**
+[`agent-systems-core`](https://github.com/Arnav-Ajay/agent-systems-core)
 
-  Covers:
+Covers:
 
-  * Tool-using agents
-  * Planner / executor separation
-  * Memory systems (episodic + semantic)
-  * **Policy-driven overrides**
+* Tool-using agents
+* Planner / executor separation
+* Memory systems (episodic + semantic)
+* Policy-driven overrides
 
 **All components from these repositories are treated as immutable inputs.**
 
@@ -95,11 +106,11 @@ This repository adds **visibility, not capability**.
 
 ## Scope of Analysis in This Repository
 
-This repository isolates failures **layer by layer**, rather than treating the system as a monolith.
-
-### Layers Examined (So Far)
+Failures are isolated **layer by layer**, rather than treating the system as a monolith.
 
 ---
+
+## Layers Examined
 
 ### 1. Retrieval Layer
 
@@ -108,13 +119,30 @@ Failures where:
 * Relevant evidence is missing
 * Evidence exists but is ranked out
 * Hybrid retrieval biases suppress correct chunks
-* Cross-document pollution occurs
+* Cross-document recall pollution occurs
 
-Retrieval is analyzed **independently**, without planner, executor, or policy intervention.
+Retrieval is analyzed **independently**, without planner, executor, policy, or evidence intervention.
 
 ---
 
-### 2. Planner Layer
+### 2. Reranking Layer
+
+Failures where:
+
+* Gold evidence is retrieved but not promoted
+* Ranking remains unchanged despite richer candidate pools
+* Reranking fails to resolve hybrid retrieval bias
+* Retrieval and reranked outputs are identical despite added signal
+
+**Key observation:**
+
+> Reranking can improve gold-chunk rank, but does not guarantee evidence sufficiency.
+
+Reranking is treated as a **distinct failure surface**, not a retrieval fix.
+
+---
+
+### 3. Planner Layer
 
 Failures where:
 
@@ -127,7 +155,7 @@ Planner analysis focuses on **decision correctness**, not answer quality.
 
 ---
 
-### 3. Executor Layer
+### 4. Executor Layer
 
 Failures where:
 
@@ -137,56 +165,98 @@ Failures where:
 * Retrieved context is dropped or mishandled
 
 **Finding:**
-In the current architecture, executor failures are structurally rare due to:
+Executor failures are structurally rare due to:
 
 * Single-step plans
 * Deterministic tool dispatch
-* Absence of downstream generation or transformation
+* Absence of downstream transformation
 
-This absence is itself an **architectural property**, not an oversight.
+This absence is an **architectural property**, not an oversight.
 
 ---
 
-### 4. Memory Layer
+### 5. Evidence Assessment Layer
 
 Failures where:
 
-* Semantic or episodic memory influences the current decision when it should not
-* Information from a previous question leaks into the current run
-* Semantic memory is treated as authoritative without validation
-* Memory-based policy signal exists, but is ignored
-* Memory is written when it shouldn’t be
-* Memory influences behavior, but no trace shows it
+* Evidence is judged sufficient despite weak or absent support
+* Evidence is judged insufficient despite being present
+* Sparse evidence is treated as decisive
+* Conflicting evidence is not detected
+* Evidence assessment is computed but not respected downstream
 
-**Finding:**
-In the current architecture, memory failures are structurally rare because the memory subsystem is **causally isolated under baseline conditions**.
+**Key finding:**
 
-That means:
+> Even when retrieval and reranking succeed, evidence assessment can still (correctly) refuse due to ambiguity, dilution, or low signal strength.
 
-* No stale memory injection
-* No cross-question contamination
-* No semantic authority abuse
-* No silent writes
-* No hidden influence
+This layer cleanly separates:
 
-This establishes a **clean baseline** before policy pressure is applied.
+* *Was something retrieved?*
+* *Was the right thing ranked?*
+* *Is the available evidence actually sufficient?*
 
 ---
 
-### ➕ 5. Policy Layer
+### 6. Memory Layer
+
+Failures where:
+
+* Semantic or episodic memory influences decisions when it should not
+* Information leaks across questions
+* Semantic memory is treated as authoritative
+* Memory-based policy signals are ignored
+* Memory writes occur silently
+* Memory influences behavior without trace attribution
+
+**Finding:**
+Under baseline conditions, memory failures are structurally rare due to causal isolation.
+
+This establishes a **clean baseline** before policy pressure.
+
+---
+
+### 7. Policy Layer
 
 Failures where:
 
 * Policy overrides planner decisions incorrectly
 * Retrieval is forced for parametric questions
-* Policy fires on insufficient or stale evidence
+* Policy fires on stale or insufficient evidence
 * Planner rationale contradicts applied policy
 * Policy influence is not traceable in logs
 
 **Finding:**
-Policy introduces **intentional coupling** between memory and planning, and is the **first layer to reintroduce failure after memory isolation**.
+Policy is the first layer to **intentionally reintroduce coupling** — and therefore the first to reintroduce failure after isolation.
 
-Policy failures are therefore analyzed as **deliberate regressions**, not accidental bugs.
+---
+
+### 8. Generation Layer
+
+Failures where:
+
+* Answers are produced despite conflicting or insufficient evidence
+* Uncertainty is collapsed into over-confident language
+* Evidence sufficiency signals are ignored
+* Refusal or hedge policies are bypassed
+
+**Key finding:**
+
+> Improved retrieval and ranking do not guarantee answerability — generation must respect epistemic state, not just context availability.
+
+Generation failures are **epistemic**, not stylistic.
+
+---
+
+### 9. Generation Policy
+
+Failures where:
+
+* Hedge is treated as a stylistic soft answer instead of a terminal action
+* Refusal thresholds are bypassed
+* Policy decisions are overridden implicitly by generation
+
+**Finding:**
+Policy-aware generation is the final enforcement point — failures here invalidate all upstream correctness.
 
 ---
 
@@ -231,10 +301,10 @@ There is **no single evaluation score**.
 ### Outputs
 
 * Planner decision traces
-* Executor execution traces
+* Reranker and evidence assessment traces
 * Memory and policy influence traces
-* Failure mode attribution
-* Explicit “ambiguous / undecidable” buckets
+* Generation behavior traces
+* Explicit failure attribution
 
 ### Non-Goal
 
@@ -248,7 +318,8 @@ This repository answers:
 
 > **What kinds of failures exist in principle?**
 
-A separate repository (`llm-observability-logs`) will address:
+A separate repository —
+[`llm-observability-logs`](https://github.com/Arnav-Ajay/llm-observability-logs) — will answer:
 
 > **How do we observe and monitor these failures reliably in production systems?**
 

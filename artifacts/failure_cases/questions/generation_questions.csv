@@ -1,0 +1,11 @@
+﻿gold_doc_id,document_name,gold_chunk_id,question_id,generation_case,question_text,expected_behavior,notes
+1,Attention Is All You Need.pdf,1,1,G-A1,What architectural components are removed in the Transformer model?,HEDGE,evidence present but marked as conflicting
+1,Attention Is All You Need.pdf,6,2,G-A2,What aspect of recurrent neural networks prevents parallelization during training?,HEDGE,evidence present but marked as conflicting
+1,Attention Is All You Need.pdf,8,4,G-A3,What mechanism does the Transformer rely on instead of recurrence?,HEDGE,evidence present but marked as conflicting
+1,Attention Is All You Need.pdf,10,6,G-B1,How is self-attention defined?,HEDGE,evidence present but marked as conflicting
+1,Attention Is All You Need.pdf,11,7,G-B2,What distinguishes the Transformer from earlier transduction models?,HEDGE,evidence present but marked as conflicting
+1,Attention Is All You Need.pdf,14,9,G-B3,What two sub-layers make up each encoder layer?,HEDGE,evidence present but marked as conflicting
+1,Attention Is All You Need.pdf,15,10,G-B4,What additional sub-layer is added to each decoder layer?,HEDGE,evidence present but marked as conflicting
+1,Attention Is All You Need.pdf,16,11,G-B5,Why is masking applied in the decoder self-attention layer?,HEDGE,evidence present but marked as conflicting
+1,Attention Is All You Need.pdf,26,15,G-C1,What is the functional form of the position-wise feed-forward network?,HEDGE,evidence present but marked as conflicting
+1,Attention Is All You Need.pdf,30,16,G-C2,What mathematical functions are used to construct positional encodings?,REFUSE,insufficient evidence

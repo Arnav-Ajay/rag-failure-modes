@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-01-31T17:39:24.571269",
+  "phase": "generation",
+  "query": "What is the functional form of the position-wise feed-forward network?",
+  "metadata": {
+    "question_id": 15,
+    "generation_case": "G-C1",
+    "expected_behavior": "HEDGE"
+  },
+  "evidence_summary": {
+    "evidence_present": true,
+    "sufficiency": "conflicting",
+    "max_similarity": 24.206069239107862,
+    "coverage_score": 0.0,
+    "conflicting_sources": true,
+    "rationale": "Multiple high-scoring sources retrieved; treat as potentially conflicting."
+  },
+  "policy_decision": {
+    "allowed": "hedge",
+    "refusal_code": null
+  },
+  "output": {
+    "type": "hedge",
+    "hedge_code": "conflicting_sources"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-27T18:13:16.160343",
+  "timestamp": "2026-01-31T17:24:23.182996",
   "question": "How is self-attention defined?",
   "metadata": {
     "question_id": 6,
@@ -32,9 +32,11 @@
     ]
   },
   "assessment": {
-    "evidence_sufficient": true,
+    "evidence_present": true,
+    "sufficiency": "conflicting",
     "max_similarity": 9.466363987450704,
-    "rationale": "Multiple high-scoring sources retrieved; treat as potentially conflicting.",
-    "sufficiency": "conflicting"
+    "coverage_score": 0.0,
+    "conflicting_sources": true,
+    "rationale": "Multiple high-scoring sources retrieved; treat as potentially conflicting."
   }
 }

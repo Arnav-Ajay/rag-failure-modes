@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-27T18:13:16.159908",
+  "timestamp": "2026-01-31T17:24:23.181928",
   "question": "What mechanism does the Transformer rely on instead of recurrence?",
   "metadata": {
     "question_id": 4,
@@ -32,9 +32,11 @@
     ]
   },
   "assessment": {
-    "evidence_sufficient": true,
+    "evidence_present": true,
+    "sufficiency": "conflicting",
     "max_similarity": 14.987067334723939,
-    "rationale": "Multiple high-scoring sources retrieved; treat as potentially conflicting.",
-    "sufficiency": "conflicting"
+    "coverage_score": 0.0,
+    "conflicting_sources": true,
+    "rationale": "Multiple high-scoring sources retrieved; treat as potentially conflicting."
   }
 }
