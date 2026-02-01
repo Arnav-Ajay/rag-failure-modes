@@ -1,14 +1,3 @@
-This is strong, coherent, and *very* close to final. I’ll do two things:
-
-1. **Make minimal surgical edits** (clarity, consistency, tightening language)
-2. **Resolve the only real inconsistency**: Generation *has* now been analyzed, so leaving it as “planned” would understate the work you actually did
-
-I will **not** change your framing, scope, or thesis.
-
-Below is a **finalized README**, ready to ship.
-
----
-
 # `rag-failure-modes`
 
 ## Why This Repository Exists
